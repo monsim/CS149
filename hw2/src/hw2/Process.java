@@ -7,7 +7,7 @@ import java.util.*;
 public class Process {
 
 	// Variables
-	private float arrivalTime;	
+	private float arrivalTime;	//hello world 
 	private int priority;
 	private float burstTime;
 	private int processNumber;	//processID Changed 
