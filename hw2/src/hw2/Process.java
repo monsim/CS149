@@ -14,7 +14,7 @@ public class Process {
 	private float startTime;		//test
 	private float finishTime;	//terminationTime
 	private float expectedRunTime;	//find out purpose
-	private final float expectedRunTimeForCal; 
+	private final float expectedRunTimeForCal; //still confused
 	private static Random randomGenerator = new Random(0);
 	public final static int MAXIMUM_QUANTA_TIME = 99;
 	public final static int MINIMUM_QUANTA_TIME = 0;
