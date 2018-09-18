@@ -10,7 +10,7 @@ public class Process {
 	private float arrivalTime;	
 	private int priority;
 	private float burstTime;
-	private int processNumber;	//processID
+	private int processNumber;	//processID Changed 
 	private float startTime;	
 	private float finishTime;	//terminationTime
 	private float expectedRunTime;	//find out purpose
