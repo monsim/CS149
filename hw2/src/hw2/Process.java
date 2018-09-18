@@ -11,7 +11,7 @@ public class Process {
 	private int priority;
 	private float burstTime;
 	private int processNumber;	//processID Changed 
-	private float startTime;	
+	private float startTime;		//test
 	private float finishTime;	//terminationTime
 	private float expectedRunTime;	//find out purpose
 	private final float expectedRunTimeForCal; 
