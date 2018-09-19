@@ -55,7 +55,7 @@ public class HPFPreemptive {
 				current = queue.poll();
 				isProcessRunning = true;
 				nextAvailability = timeCounter + current.getExpectedRunTime();
-				this.quantaScale += timeCounter + ": " + current.getProcessNumber() + "\n";
+				this.quantaScale += timeCounter + ": " + current.getProcessID() + "\n";
 
 				this.turnaroundTime += nextAvailability - current.getArrivalTime();
 				this.waitingTime += (nextAvailability - current.getArrivalTime()) - current.getExpectedRunTime();
@@ -63,7 +63,7 @@ public class HPFPreemptive {
 
 			} else {
 				if (current != null) {
-					this.quantaScale += timeCounter + ": " + current.getProcessNumber() + "\n";
+					this.quantaScale += timeCounter + ": " + current.getProcessID() + "\n";
 				} else {
 					this.quantaScale += timeCounter + ": Waiting for a process\n";
 				}
@@ -73,7 +73,7 @@ public class HPFPreemptive {
 
 		if (isProcessRunning) {
 			for (int i = MAX_QUANTA_RUN_TIME; i < Math.round(nextAvailability); i++) {
-				this.quantaScale += i + ": " + current.getProcessNumber() + "\n";
+				this.quantaScale += i + ": " + current.getProcessID() + "\n";
 			}
 			this.processesInformation += this.printProcessesInfo(current);
 		}
@@ -95,7 +95,7 @@ public class HPFPreemptive {
 	 */
 	private String printProcessesInfo(Process theProcess) {
 
-		int processNumber = theProcess.getProcessNumber();
+		int processNumber = theProcess.getProcessID();
 		float arrivalTime = theProcess.getArrivalTime();
 		float runTime = theProcess.getExpectedRunTime();
 		int priority = theProcess.getPriority();

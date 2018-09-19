@@ -69,7 +69,7 @@ public class FCFS
 				isRunning = true;
 				// expectedRunTime = when the current process is expected to complete its run
 				nextAvailability = timeCounter + current.getExpectedRunTime();
-				this.CPUStatus += timeCounter + ": Process " + current.getProcessNumber() +"\n";
+				this.CPUStatus += timeCounter + ": Process " + current.getProcessID() +"\n";
 
 				// time from process start to finish
 				this.turnAroundTime += nextAvailability - current.getArrivalTime();
@@ -83,7 +83,7 @@ public class FCFS
 				if (current != null) // if CPU is busy,
 				{
 					// add process number
-					this.CPUStatus += timeCounter + ": Process " + current.getProcessNumber() +  "\n";
+					this.CPUStatus += timeCounter + ": Process " + current.getProcessID() +  "\n";
 				}
 				else // if CPU is idle,
 				{
@@ -98,7 +98,7 @@ public class FCFS
 		{
 			this.processDone++;
 			for (; timeCounter < Math.round(nextAvailability); timeCounter++) {
-				this.CPUStatus += timeCounter + ": Process " + current.getProcessNumber() +  "\n";
+				this.CPUStatus += timeCounter + ": Process " + current.getProcessID() +  "\n";
 				this.responseTime += timeCounter;
 			}
 			this.infoForProcess += this.printProcess(current);
@@ -117,7 +117,7 @@ public class FCFS
 
 	// method to return formatted string of a process
 	private String printProcess(Process currProcess) {
-			return "\nProcess " + currProcess.getProcessNumber() +
+			return "\nProcess " + currProcess.getProcessID() +
 					" \nArrival Time of current process: " + currProcess.getArrivalTime() +
 					" \nRun time of current process: " + currProcess.getExpectedRunTime() +
 					" \nPriority of current process: " + currProcess.getPriority() + "\n";

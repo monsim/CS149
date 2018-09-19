@@ -67,7 +67,7 @@ public class RoundRobin {
 				if (current.getExpectedRunTime() > 0) {
 					readyQueue.add(current);
 				} else {
-					current.setFinishTime(timeCounter);
+					current.setCompletionTime(timeCounter);
 					}
 				current = null;
 			}
@@ -82,7 +82,7 @@ public class RoundRobin {
 					current.setStartTime(timeCounter);
 				}
 				current.setExpectedRunTime(current.getExpectedRunTime() - TIME_SLICE);
-				this.quantaScale += timeCounter + ": " + current.getProcessNumber() + "\n";
+				this.quantaScale += timeCounter + ": " + current.getProcessID() + "\n";
 			} else if (!finish) {
 				this.quantaScale += timeCounter + ": Waiting for a process\n";
 			}
@@ -102,8 +102,8 @@ public class RoundRobin {
 		float totalWaitTime = 0;
 		float totalResponseTime = 0;
 		for(Process process: processes) {
-			totalTurnaroundTime += process.getFinishTime() - process.getArrivalTime();
-			totalWaitTime += (process.getFinishTime() - process.getArrivalTime()) - process.getExpectedRunTimeForCal();
+			totalTurnaroundTime += process.getCompletionTime() - process.getArrivalTime();
+			totalWaitTime += (process.getCompletionTime() - process.getArrivalTime()) - process.getExpectedRunTimeForCal();
 			totalResponseTime += process.getStartTime() - process.getArrivalTime();
 		}
 		float averageTurnaroundTime = 0;
@@ -150,7 +150,7 @@ public class RoundRobin {
      */
     private String printProcessesInfo(Process currentProcess) 
     {
-        int processNumber = currentProcess.getProcessNumber(); 
+        int processNumber = currentProcess.getProcessID(); 
         float arrivalTime = currentProcess.getArrivalTime();
         float runTime = currentProcess.getExpectedRunTime();
         int priority = currentProcess.getPriority();

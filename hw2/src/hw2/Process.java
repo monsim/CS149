@@ -2,130 +2,126 @@ package hw2;
 
 import java.util.*;
 
-//Process class will simulate different processes
-
 public class Process {
 
-	// Variables
-	private float arrivalTime;	//hello world 
+	public final static int MAX_QUANTA = 99;
+	public final static int MIN_QUANTA = 0;
+	public final static float MIN_TOTAL_RUN_TIME = (float) 0.1;
+	public final static float MAX_TOTAL_RUN_TIME = 10;
+	
 	private int priority;
+	private float arrivalTime;
 	private float burstTime;
-	private int processNumber;	//processID Changed 
-	private float startTime;		//test
-	private float finishTime;	//terminationTime
-	private float expectedRunTime;	//find out purpose
-	private final float expectedRunTimeForCal; //still confused
-	private static Random randomGenerator = new Random(0);
-	public final static int MAXIMUM_QUANTA_TIME = 99;
-	public final static int MINIMUM_QUANTA_TIME = 0;
-	public final static float MINIMUM_TOTAL_RUN_TIME = (float) 0.1;
-	public final static float MAXIMUM_TOTAL_RUN_TIME = 10;
+	private float completionTime;
+	private float expectedRunTime;
+	private float startTime;
+	private int processID;
+	private final float expectedRunTimeForCal;
+	
+	private static Random randomGen = new Random(0);		//change seed to time?
 
-	public Process(int aProcessNumber) {
+	public Process(int pid) {
+		processID = pid;
 		arrivalTime = generateRandomArrivalTime();
 		expectedRunTime = generateRandomExpectedRunTime();
 		expectedRunTimeForCal = expectedRunTime;
-		priority = generateRandomPriority();
-		processNumber = aProcessNumber;
 		startTime = -1;
-		finishTime = -1;
+		completionTime = -1;
 		burstTime = expectedRunTime;
+		priority = assignRandomPriority();
 	}
 
-	// This is for random time between 0 to 99.
+	// returns pid
+	public int getProcessID() {
+		return processID;
+	}
 
+	// TODO: CHANGE THE SEED TO TIME
+	public static void resetRandomGen() {
+		randomGen = new Random(0);
+	}
+
+	// makes random arrival time
 	private float generateRandomArrivalTime() {
-		return MAXIMUM_QUANTA_TIME * randomGenerator.nextFloat();
+		return MAX_QUANTA * randomGen.nextFloat();
 	}
 
-	// This is for random time between 0.1 to 10.
-
+	// makes random expected runtime
 	private float generateRandomExpectedRunTime() {
-		return MINIMUM_TOTAL_RUN_TIME + (MAXIMUM_TOTAL_RUN_TIME - MINIMUM_TOTAL_RUN_TIME) * randomGenerator.nextFloat();
+		return MIN_TOTAL_RUN_TIME + (MAX_TOTAL_RUN_TIME - MIN_TOTAL_RUN_TIME) * randomGen.nextFloat();
 	}
 
-	// This generates a priority for random integer between 1 to 4.
-
-	private int generateRandomPriority() {
-		return randomGenerator.nextInt(4) + 1;
+	// assigns priority
+	private int assignRandomPriority() {
+		return randomGen.nextInt(4) + 1; // random number between 1 and 4
 	}
 
-	// This generates a list of processes
-
+	// generates a list of processes
 	public static ArrayList<Process> generateProcesses(int numOfProcesses) {
-		ArrayList<Process> randomProcesses = new ArrayList<>();
-		for (int i = 1; i <= numOfProcesses; i++) {
-			randomProcesses.add(new Process(i));
+		ArrayList<Process> processes = new ArrayList<>();
+		for (int i = 0; i < numOfProcesses; i++) {
+			Process toAdd = new Process(i);
+			processes.add(toAdd);
 		}
-		return randomProcesses;
+		return processes;
 	}
 
+	// returns arrival time
 	public float getArrivalTime() {
 		return arrivalTime;
 	}
 
-	// This sets the expected run time of the process
-
+	// sets the expected run time
 	public void setExpectedRunTime(float time) {
 		expectedRunTime = time;
 	}
 
-	// This returns expected run time of a process
-
+	// returns expected run time
 	public float getExpectedRunTime() {
 		return expectedRunTime;
 	}
 
-	// This returns initial expected run time of a process
-
+	// returns initial expected run time of a process
 	public float getExpectedRunTimeForCal() {
 		return expectedRunTimeForCal;
 	}
 
+	// returns burst time
 	public float getBurstTime() {
 		return burstTime;
 	}
 
+	// returns priority of the process
 	public int getPriority() {
 		return priority;
 	}
 
-	// This returns process number of a Process.
-
-	public int getProcessNumber() {
-		return processNumber;
+	// returns completion time
+	public float getCompletionTime() {
+		return completionTime;
 	}
 
-	// Sets start time of a Process
-
-	public void setStartTime(float startTime) {
-		this.startTime = startTime;
+	// sets completion time
+	public void setCompletionTime(float completionTime) {
+		this.completionTime = completionTime;
 	}
 
-	// Returns start time of a Process
+	// returns start time
 	public float getStartTime() {
 		return startTime;
 	}
 
-	public void setFinishTime(float finishTime) {
-		this.finishTime = finishTime;
+	// sets start time
+	public void setStartTime(float startTime) {
+		this.startTime = startTime;
 	}
 
-	public float getFinishTime() {
-		return finishTime;
-	}
-
-	public void decBurstTime() {
-
-		if (burstTime < 1) {
+	// decrements burst time
+	public void decreaseBurstTime() {
+		if (burstTime < 1)
 			burstTime = 0;
-		} else {
+		else
 			burstTime--;
-		}
-
 	}
 
-	public static void resetRandomGenerator() {
-		randomGenerator = new Random(0);
-	}
 }

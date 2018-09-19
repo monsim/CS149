@@ -62,7 +62,7 @@ public class SRTF {
 	}
 
 	public String printProcessesInfo(Process currProcess) {
-		return "\nProcess " + currProcess.getProcessNumber() + " \nArrival Time of this process is: "
+		return "\nProcess " + currProcess.getProcessID() + " \nArrival Time of this process is: "
 				+ currProcess.getArrivalTime() + " \nExpected Run Time is: " + currProcess.getExpectedRunTime()
 				+ " \nPriority " + currProcess.getPriority() + "\n";
 	}
@@ -75,7 +75,7 @@ public class SRTF {
 		String timeline = "";
 		// expected values print
 		for (int i = 0; i < processes.size(); i++) {
-			System.out.println("Process " + processes.get(i).getProcessNumber());
+			System.out.println("Process " + processes.get(i).getProcessID());
 			System.out.println("Arrival Time of this process is: " + processes.get(i).getArrivalTime());
 			System.out.println("Expected Run Time is: " + processes.get(i).getExpectedRunTime());
 			System.out.println("Priority: " + processes.get(i).getPriority() + "\n");
@@ -114,12 +114,12 @@ public class SRTF {
 			if (current == null) {
 				timeline = timeline + "NAN ";
 			} else {
-				timeline = timeline + current.getProcessNumber() + " ";
+				timeline = timeline + current.getProcessID() + " ";
 			}
 			// decrement only if it's not null
 			if (current != null) {
-				System.out.println("----Process #" + current.getProcessNumber() + "------");
-				current.decBurstTime();// decrement process
+				System.out.println("----Process #" + current.getProcessID() + "------");
+				current.decreaseBurstTime();// decrement process
 
 				// when burst time is 0 the process is done
 				if (current.getBurstTime() == 0) {

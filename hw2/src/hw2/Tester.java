@@ -8,17 +8,17 @@ public class Tester {
 	public static void main(String[] args) {
 
 		testsRR();
-		Process.resetRandomGenerator();
+		Process.resetRandomGen();
 		testsHPFNonPre();
-		Process.resetRandomGenerator();
+		Process.resetRandomGen();
 		testsHPFPre();
-		Process.resetRandomGenerator();
+		Process.resetRandomGen();
 		testsFCFC();
-		Process.resetRandomGenerator();
+		Process.resetRandomGen();
 		testsSJF();
-		Process.resetRandomGenerator();
+		Process.resetRandomGen();
 		testsSRTF();
-		Process.resetRandomGenerator();
+		Process.resetRandomGen();
 
 	}
 
