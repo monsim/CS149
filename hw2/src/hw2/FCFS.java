@@ -9,7 +9,7 @@ import java.util.Collections;
 
 public class FCFS
 {
-	// Fields
+	// FAAAAAAAAA
 	public String CPUStatus; // a string to represent the status of CPU at every quanta starting from 0 to 100.
 	public String infoForProcess;
 	public final static int MAX_QUANTA_RUN_TIME = 100;
