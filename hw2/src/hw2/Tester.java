@@ -106,7 +106,7 @@ public class Tester {
 				RoundRobin rr = new RoundRobin(Process.generateProcesses(60));
 				rr.run();
 				System.out.println();
-				rr.showCalculation();
+				rr.calculations();
 				System.out.println();
 			}
 		} catch (IOException a) {
