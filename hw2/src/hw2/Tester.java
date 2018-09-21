@@ -1,116 +1,111 @@
 package hw2;
 
 import java.io.*;
-//This will test and then output the algorithms to a text file 
 
+/**
+ * Prints outputs to txt file
+ */
 public class Tester {
 
 	public static void main(String[] args) {
-
-		testsRR();
-		Process.resetRandomGen();
-		testsHPFNonPre();
-		Process.resetRandomGen();
-		testsHPFPre();
-		Process.resetRandomGen();
 		testsFCFC();
 		Process.resetRandomGen();
 		testsSJF();
 		Process.resetRandomGen();
-		testsSRTF();
+		testsSRT();
 		Process.resetRandomGen();
-
+		testsRR();
+		Process.resetRandomGen();
+		testsHPFNonP();
+		Process.resetRandomGen();
+		testsHPFP();
+		Process.resetRandomGen();
 	}
 
 	public static void testsFCFC() {
 		try {
-			PrintStream outToFile = new PrintStream("FCFS_OUT.txt");
-			System.setOut(outToFile);
-			for (int i = 1; i < 6; i++) {
-				System.out.println("\n\n------ 	Now Running FCFS: Test " + i + " -----");
-				FCFS fcfs = new FCFS(Process.generateProcesses(60));
+			PrintStream streamToFile = new PrintStream("FCFS.txt");
+			System.setOut(streamToFile);
+			for (int i = 0; i < 5; i++) {
+				System.out.println("Now Running First-Come First-Served: Test " + (i + 1));
+				FCFS fcfs = new FCFS(Process.generateProcesses(50));
 				fcfs.run();
 			}
-		} catch (IOException a) {
-			System.out.println("\n\n ----- Error running FCFS ----- " + "\n" + a);
+		} catch (IOException e) {
+			System.out.println("\n! Error running FCFS ! \n" + e);
 		}
 	}
 
-	// This will test SRT and output to the SRT.txt
-	public static void testsSRTF() {
-		try {
-			PrintStream outToFile = new PrintStream("SRT_OUT.txt");
-			System.setOut(outToFile);
-			for (int i = 1; i < 6; i++) {
-				System.out.println("\n\n------- Now Running SRT: Test " + i + " ------");
-				SRTF srt = new SRTF(Process.generateProcesses(60));
-				srt.run();
-			}
-		} catch (IOException a) {
-			System.out.println("\n\n------ Error running SRT------- " + "\n" + a);
-		}
-	}
-
-	// This will test SJF and output to the SJF_OUT.txt
 	public static void testsSJF() {
 		try {
-			PrintStream outToFile = new PrintStream("SJF_OUT.txt");
-			System.setOut(outToFile);
-			for (int i = 1; i < 6; i++) {
-				System.out.println("\n\n------ Now Running Shortest Job First: Test " + i + " ------");
-				SJF sjf = new SJF(Process.generateProcesses(60));
+			PrintStream streamToFile = new PrintStream("SJF.txt");
+			System.setOut(streamToFile);
+			for (int i = 0; i < 5; i++) {
+				System.out.println("\nNow Running Shortest Job First: Test " + (i + 1));
+				SJF sjf = new SJF(Process.generateProcesses(50));
 				sjf.run();
 			}
-		} catch (IOException a) {
-			System.out.println("\n\n ----- Error running SJF ----- " + "\n" + a);
+		} catch (IOException e) {
+			System.out.println("\n! Error running SJF ! \n" + e);
 		}
 	}
 
-	// This will test HPF Nonpreemptive and output to the HPF-NONPRE_OUT.txt
-	public static void testsHPFNonPre() {
+	public static void testsSRT() {
 		try {
-			PrintStream outToFile = new PrintStream("HPF-NONPRE_OUT.txt");
-			System.setOut(outToFile);
-			for (int i = 1; i < 6; i++) {
-				System.out.println("\n\n------- Now Running HPF Nonpreemptive: Test " + i + " ------");
-				HPFNonpreemptive hpf = new HPFNonpreemptive(Process.generateProcesses(60));
-				hpf.run();
+			PrintStream streamToFile = new PrintStream("SRT.txt");
+			System.setOut(streamToFile);
+			for (int i = 0; i < 5; i++) {
+				System.out.println("\nNow Running Shortest Remaining Time: Test " + (i + 1));
+				SRTF srt = new SRTF(Process.generateProcesses(50));
+				srt.run();
 			}
-		} catch (IOException a) {
-			System.out.println("\n\n ---- Error running HPF-NONPRE ------ " + "\n" + a);
+		} catch (IOException e) {
+			System.out.println("\n! Error running SRT ! \n" + e);
 		}
 	}
 
-	// This will test HPF Preemptive and output to the HPF-PRE_OUT.txt
-	public static void testsHPFPre() {
-		try {
-			PrintStream outToFile = new PrintStream("HPF-PRE_OUT.txt");
-			System.setOut(outToFile);
-			for (int i = 1; i < 6; i++) {
-				System.out.println("\n\n------- Now Running HPF Preemptive: Test " + i + " ------");
-				HPFPreemptive hpf = new HPFPreemptive(Process.generateProcesses(60));
-				hpf.run();
-			}
-		} catch (IOException a) {
-			System.out.println("\n\n ------ Error running HPF-PRE ------ " + "\n" + a);
-		}
-	}
-
-	// This will test RR and output to the RR_OUT.txt
 	public static void testsRR() {
 		try {
-			PrintStream outToFile = new PrintStream("RR_OUT.txt");
-			System.setOut(outToFile);
-			for (int i = 1; i < 6; i++) {
-				System.out.println("------- Now Running RR: Test " + i + " ------");
-				RoundRobin rr = new RoundRobin(Process.generateProcesses(60));
+			PrintStream streamToFile = new PrintStream("RR.txt");
+			System.setOut(streamToFile);
+			for (int i = 0; i < 5; i++) {
+				System.out.println("\nNow Running Round Robin: Test " + (i + 1));
+				RoundRobin rr = new RoundRobin(Process.generateProcesses(50));
 				rr.run();
 				System.out.println();
 				rr.calculations();
 				System.out.println();
 			}
-		} catch (IOException a) {
-			System.out.println("\n\n ------ Error running RR ------- " + "\n" + a);
+		} catch (IOException e) {
+			System.out.println("\n! Error running Round Robin ! \n" + e);
+		}
+	}
+
+	public static void testsHPFNonP() {
+		try {
+			PrintStream streamToFile = new PrintStream("HPF-NONPREEMTIVE.txt");
+			System.setOut(streamToFile);
+			for (int i = 0; i < 5; i++) {
+				System.out.println("\nNow Running HPF Non-Preemptive: Test " + (i + 1));
+				HPFNonpreemptive hpf = new HPFNonpreemptive(Process.generateProcesses(50));
+				hpf.run();
+			}
+		} catch (IOException e) {
+			System.out.println("\n! Error running HPF-Non-Preemptive ! \n" + e);
+		}
+	}
+
+	public static void testsHPFP() {
+		try {
+			PrintStream streamToFile = new PrintStream("HPF-PREEMTIVE.txt");
+			System.setOut(streamToFile);
+			for (int i = 0; i < 5; i++) {
+				System.out.println("\nNow Running HPF Preemptive: Test " + (i + 1));
+				HPFPreemptive hpf = new HPFPreemptive(Process.generateProcesses(50));
+				hpf.run();
+			}
+		} catch (IOException e) {
+			System.out.println("\n! Error running HPF-PRE ! \n" + e);
 		}
 	}
 }
