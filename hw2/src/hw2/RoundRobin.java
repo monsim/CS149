@@ -18,6 +18,8 @@ public class RoundRobin
 	
 	private Queue<Process> queueProcess;
 	private ArrayList<Process> processes;
+	private float waitTime;
+	private float responseTime;
 	
 	/**
 	 * Constructor for Round Robin that takes incoming processes and sorts based on its arrival time. 
@@ -27,6 +29,8 @@ public class RoundRobin
 	{
 		processInfo = "";
 		quantaScale = "";
+		waitTime = 0;
+		responseTime = 0;
 		
 		processes = aProcesses;
 		
@@ -155,9 +159,9 @@ public class RoundRobin
 	 */
 	public void calculations() 
 	{
-		float responseTime = 0;
+		
 		float turnaroundTime = 0;
-		float waitTime = 0;
+		
 		
 		for(Process process: processes)
 		{
@@ -186,7 +190,45 @@ public class RoundRobin
 		System.out.println("Throughput = " + throughput);
 	}
 	
+	public void calculations(boolean noPrint) 
+	{
+		float turnaroundTime = 0;
+		
+		
+		for(Process process: processes)
+		{
+			turnaroundTime = turnaroundTime + process.getCompletionTime() - process.getArrivalTime();
+			waitTime = waitTime + (process.getCompletionTime() - process.getArrivalTime()) - process.getExpectedRunTimeForCal();
+			responseTime = responseTime + process.getStartTime() - process.getArrivalTime();
+		}
+		float avgTurnaroundTime = 0;
+		float throughput = 0;
+		float avgResponseTime = 0;
+		float avgWaitTime = 0;
 	
+		
+		if(processes.size() > 0) 
+		{
+			avgTurnaroundTime = turnaroundTime / processes.size();
+			avgWaitTime = waitTime / processes.size();
+			avgResponseTime = responseTime / processes.size();
+			if(timeCount > 0)
+				throughput = (float)processes.size() / timeCount;
+		}
+		
+	}
+	
+	public float getWaitTime() {
+		return waitTime;
+	}
+	
+	public int getTimeCount() { 
+		return timeCount;
+	}
+	
+	public float getResponseTime() {
+		return responseTime;
+	}
 	
 	 /**
      * prints the process information that was ran

@@ -2,13 +2,15 @@ package hw2;
 
 import java.io.*;
 
+//group 10 CS149
+
 /**
  * Prints outputs to txt file
  */
 public class Tester {
 
 	public static void main(String[] args) {
-		testsFCFC();
+		testsFCFS();
 		Process.resetRandomGen();
 		testsSJF();
 		Process.resetRandomGen();
@@ -22,7 +24,7 @@ public class Tester {
 		Process.resetRandomGen();
 	}
 
-	public static void testsFCFC() {
+	public static void testsFCFS() {
 		try {
 			PrintStream streamToFile = new PrintStream("FCFS.txt");
 			System.setOut(streamToFile);

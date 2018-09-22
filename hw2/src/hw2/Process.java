@@ -18,7 +18,7 @@ public class Process {
 	private int processID;
 	private final float expectedRunTimeForCal;
 	
-	private static Random randomGen = new Random(0);		//change seed to time?
+	private static Random randomGen = new Random(0);		
 
 	public Process(int pid) {
 		processID = pid;
@@ -36,7 +36,6 @@ public class Process {
 		return processID;
 	}
 
-	// TODO: CHANGE THE SEED TO TIME
 	public static void resetRandomGen() {
 		randomGen = new Random(0);
 	}

@@ -2,8 +2,6 @@ package hw2;
 
 import java.util.*;
 
-import hw2.Process;
-
 public class SJF {
 	
 	public String CPUStatus; // status of CPU is recorded at every quanta
