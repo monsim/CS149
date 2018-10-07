@@ -9,9 +9,7 @@ public class Tester
 
         // number of customers per seller per hour
         // ask for input from user
-        int numOfCustomers = 0;
-        
-        numOfCustomers = Integer.parseInt(args[0]);
+        int numOfCustomers = Integer.parseInt(args[0]);
 
         final Object lock = new Object();
 
