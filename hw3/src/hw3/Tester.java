@@ -9,6 +9,12 @@ public class Tester
 
         // number of customers per seller per hour
         // ask for input from user
+    		
+    		if (args.length <= 0) {
+    			System.out.println("Please enter a valid number of customers (above 1)");
+    			return;
+    		}
+    		
         int numOfCustomers = Integer.parseInt(args[0]);
 
         final Object lock = new Object();
