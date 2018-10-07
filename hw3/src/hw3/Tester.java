@@ -10,13 +10,8 @@ public class Tester
         // number of customers per seller per hour
         // ask for input from user
         int numOfCustomers = 0;
-        Scanner userInput = new Scanner(System.in);
-        System.out.print("Please enter # of Customers per Seller: ");
-
-        if(userInput.hasNextInt())
-            numOfCustomers = userInput.nextInt();
-        else
-            System.out.print("Invalid input. Please enter an integer.\n");
+        
+        numOfCustomers = Integer.parseInt(args[0]);
 
         final Object lock = new Object();
 
