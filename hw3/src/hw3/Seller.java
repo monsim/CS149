@@ -34,12 +34,6 @@ public abstract class Seller implements Runnable {
 		time = (int) (currentTime + serviceTime); // + elapse_time;
 		// System.out.println("----------------" + customer.getArrivalTime() + "---sid:
 		// " + this.sellerID + "service: " +this.serviceTime);
-
-		// if (this.serviceTime < 10)
-		// timeStampService = hour + ":0" + this.serviceTime;
-		// else
-		// timeStampService = hour + ":" + this.serviceTime;
-
 		customer.setTime(time);
 	}
 
@@ -76,12 +70,12 @@ public abstract class Seller implements Runnable {
 	}
 
 	protected void printMsg(Customer customer, Seat seat) {
-		System.out.println("TEST: " + customer.getArrivalTime() + " + " + this.serviceTime);
+		//System.out.println("TEST: " + customer.getArrivalTime() + " + " + this.serviceTime);
 		// Arrival Time
 		System.out.println(getArrivalTime(customer) + "  Customer " + customer.getCustomerID()
 				+ " just arrived at seller " + this.sellerID);
 		// Service Time
-		System.out.println(getServiceTime(customer) + "  Time to Serve Customer " + customer.getCustomerID());
+		System.out.println(getServiceTime(customer) + "  Time Taken to Serve Customer " + customer.getCustomerID());
 		// Success Time
 		if (seat == null)
 			System.out.println(getSuccessTime(customer) + "  " + sellerID + " - Sorry, the concert is sold out!");
@@ -107,7 +101,7 @@ public abstract class Seller implements Runnable {
 		String timeStampArrival = "";
 		// String timeStampService = "";
 
-		int hour = customer.getTime() / 60;
+		int hour = customer.getArrivalTime() / 60;
 		if (customer.getArrivalTime() < 10)
 			timeStampArrival = hour + ":0" + customer.getArrivalTime();
 		else
