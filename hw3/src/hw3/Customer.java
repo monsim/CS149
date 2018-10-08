@@ -8,7 +8,8 @@ public class Customer implements Comparable<Customer>
     private int arrivalTime;
     private int seatNum;
     private int customerID;
-    private String ticket;
+
+	private String ticket;
     private int time;
 
     /**
@@ -94,6 +95,14 @@ public class Customer implements Comparable<Customer>
     public int customerID(){
         return this.customerID;
     }
+    
+    public int getCustomerID() {
+		return customerID;
+	}
+
+	public void setCustomerID(int customerID) {
+		this.customerID = customerID;
+	}
 
     /**
      * Compares arrival time of 2 customers
