@@ -32,9 +32,9 @@ public abstract class Seller implements Runnable {
 	protected void callTime(Customer customer) {
 
 		time = (int) (currentTime + serviceTime); // + elapse_time;
+		customer.setTime(time);
 		// System.out.println("----------------" + customer.getArrivalTime() + "---sid:
 		// " + this.sellerID + "service: " +this.serviceTime);
-		customer.setTime(time);
 	}
 
 	protected void assignSeat(Customer customer, Seat seat, int i, int j) {
@@ -49,7 +49,6 @@ public abstract class Seller implements Runnable {
 	}
 
 	protected void update() {
-
 		currentTime = System.currentTimeMillis() - this.pastTime;
 		if (currentTime < 1000)
 			currentTime = 0;
@@ -75,7 +74,7 @@ public abstract class Seller implements Runnable {
 		System.out.println(getArrivalTime(customer) + "  Customer " + customer.getCustomerID()
 				+ " just arrived at seller " + this.sellerID);
 		// Service Time
-		System.out.println(getServiceTime(customer) + "  Time Taken to Serve Customer " + customer.getCustomerID());
+		System.out.println(getServiceTime(customer) + "  Service Start Time " + customer.getCustomerID());
 		// Success Time
 		if (seat == null)
 			System.out.println(getSuccessTime(customer) + "  " + sellerID + " - Sorry, the concert is sold out!");
@@ -110,25 +109,27 @@ public abstract class Seller implements Runnable {
 	}
 
 	private String getServiceTime(Customer customer) {
-		String arrival = getArrivalTime(customer);
+		//String arrival = getArrivalTime(customer);
 		String success = getSuccessTime(customer);
 		
-		int hourArrival = Integer.parseInt(arrival.substring(0,1)) * 60;
-		int minArrival = Integer.parseInt(arrival.substring(2,4));
-		int totalArrival = hourArrival + minArrival;
+//		int hourArrival = Integer.parseInt(arrival.substring(0,1)) * 60;
+//		int minArrival = Integer.parseInt(arrival.substring(2,4));
+//		int totalArrival = hourArrival + minArrival;
 		
 		int hourSuccess = Integer.parseInt(success.substring(0,1)) * 60;
 		int minSuccess = Integer.parseInt(success.substring(2,4));
-		int totalSucess = hourSuccess + minSuccess;
-		
-		int serviceTime = Math.abs(totalSucess - totalArrival);
+		int totalSuccess = hourSuccess + minSuccess;
+//		
+//		System.out.println("TotalSuccess: " + totalSuccess);
+//		System.out.println("Service Time: " + this.serviceTime);
+		int servedTime = Math.abs(totalSuccess - this.serviceTime);
 		String serviveString = "";
 		
-		int hour = serviceTime / 60;
-		if (serviceTime < 10)
-			serviveString = hour + ":0" + serviceTime;
+		int hour = servedTime / 60;
+		if (servedTime < 10)
+			serviveString = hour + ":0" + servedTime;
 		else
-			serviveString = hour + ":" + serviceTime;
+			serviveString = hour + ":" + servedTime;
 		
 		return serviveString;
 	}
