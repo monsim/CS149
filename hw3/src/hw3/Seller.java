@@ -12,7 +12,8 @@ public abstract class Seller implements Runnable {
 	protected int serviceTime;
 	protected int ticketNum = 1;
 	protected int time = 0;
-
+	
+	
 	protected long pastTime;
 	protected long currentTime;
 
@@ -46,6 +47,9 @@ public abstract class Seller implements Runnable {
 		ticketNum++;
 		seat.assignSeat(customer);
 		seating[i][j] = seat;
+		if (sellerID.substring(0,1).equals("M")) Tester.successM++;
+		if (sellerID.substring(0,1).equals("H")) Tester.successH++;
+		if (sellerID.substring(0,1).equals("L")) Tester.successL++;
 	}
 
 	protected void update() {
@@ -74,7 +78,7 @@ public abstract class Seller implements Runnable {
 		System.out.println(getArrivalTime(customer) + "  Customer " + customer.getCustomerID()
 				+ " just arrived at seller " + this.sellerID);
 		// Service Time
-		System.out.println(getServiceTime(customer) + "  Service Start Time " + customer.getCustomerID());
+		System.out.println(getServiceTime(customer) + "  Service start time: Customer " + customer.getCustomerID());
 		// Success Time
 		if (seat == null)
 			System.out.println(getSuccessTime(customer) + "  " + sellerID + " - Sorry, the concert is sold out!");
@@ -82,6 +86,8 @@ public abstract class Seller implements Runnable {
 			System.out.println(getSuccessTime(customer) + "  " + sellerID + " - Success! Your seat is " + seat.getSeatNumber());
 
 		printSeating(this.seating, 10, 10);
+		
+		System.out.println();
 	}
 
 	protected String getSuccessTime(Customer customer) {

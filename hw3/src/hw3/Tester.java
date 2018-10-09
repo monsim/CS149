@@ -4,6 +4,11 @@ import java.util.Scanner;
 
 public class Tester
 {
+	
+	static int successH = 0;
+    static int successM = 0;
+    static int successL = 0;
+    
     public static void main(String[] args)
     {
 
@@ -18,6 +23,8 @@ public class Tester
         int numOfCustomers = Integer.parseInt(args[0]);
 
         final Object lock = new Object();
+        
+        
 
         // create 2d array that represents the seating
         int maxRows = 10;
@@ -59,6 +66,11 @@ public class Tester
                 e.printStackTrace();
             }
         }
+        
+
+		System.out.println("Total H customers successfully served: " + Tester.successH);
+		System.out.println("Total M customers successfully served: " + Tester.successM);
+		System.out.println("Total L customers successfully served: " + Tester.successL);
     }
 
 
