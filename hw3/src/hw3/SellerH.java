@@ -3,70 +3,50 @@ package hw3;
 public class SellerH extends Seller
 {
     private Object lock;
-    public SellerH(Seat[][] seat, String sellerID, Object lock)
-    {
-        // Seller H takes 1 or 2 minutes to complete a ticket sale
-        super(seat, randomVariable.nextInt(2) + 1, sellerID, lock, System.currentTimeMillis());
+    
+    public SellerH(Seat[][] seat, String sellerID, Object lock) {
+        super(seat, randomVariable.nextInt(2) + 1, sellerID, lock, System.currentTimeMillis());	//1 or 2 minutes to sell ticket
         this.lock = lock;
     }
 
+    //method to sell a ticket to a customer and assign the customer to a seat
     public void sell() {
         while (!customerQueue.isEmpty()) {
-            //Object lock = new Object();
-
             Customer customer = null;
-            if (customerQueue.isEmpty())
-                return;
-            // Get customer in queue that is ready
+            if (customerQueue.isEmpty()) return;
             update();
-
-            if(currentTime <= 59)
+            if(currentTime < 60)
                 customer = customerQueue.peek();
             else
                 return;
-            // Find seat for the customer
-            // Case for Seller H
             Seat seat = null;
-
-            //System.out.println(currentTime);
-
-            synchronized(lock)
-            {
-
+            synchronized(lock) {
                 update();
-                if(currentTime  >= (customer.getArrivalTime()))
-                {
-                    find_seat:
+                if(currentTime  >= (customer.getArrivalTime())) {
+                    assignSeat:
                     for (int i = 0; i < seating.length; i++) {
                         for (int j = 0; j < seating[0].length; j++) {
+                        		//if the seat is empty, give it to a Customer
                             if (seating[i][j].isSeatEmpty()) {
-                                // Assign seat to customer
-                                // Seat number = (Row x 10) + (Col + 1)
                                 int seatNum = (i*10)+j+1;
                                 seat = new Seat(seatNum);
                                 super.assignSeat(customer, seat, i, j);
-                                //update();
                                 printMsg(customer, seat);
                                 customerQueue.remove();
-
-                                break find_seat;
+                                break assignSeat;		//don't need to continue to find seats
                             }
                         }
                     }
                 }
             }
-            if(seat != null){
+            if(seat != null) {
                 try {
                     Thread.sleep(serviceTime * 1000);
                     update();
-                } catch (InterruptedException e)
-                {
+                } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
             }
-
-
         }
     }
-
 }
