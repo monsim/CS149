@@ -5,7 +5,7 @@ public class SellerH extends Seller
     private Object lock;
     
     public SellerH(Seat[][] seat, String sellerID, Object lock) {
-        super(seat, randomVariable.nextInt(2) + 1, sellerID, lock, System.currentTimeMillis());	//1 or 2 minutes to sell ticket
+        super(seat, randomVar.nextInt(2) + 1, sellerID, lock, System.currentTimeMillis());	//1 or 2 minutes to sell ticket
         this.lock = lock;
     }
 

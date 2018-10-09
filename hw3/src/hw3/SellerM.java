@@ -5,7 +5,7 @@ public class SellerM extends Seller{
 
     public SellerM(Seat[][] seat, String sellerID, Object lock)
     {
-        super(seat, randomVariable.nextInt(3) + 2, sellerID, lock, System.currentTimeMillis());
+        super(seat, randomVar.nextInt(3) + 2, sellerID, lock, System.currentTimeMillis());
         this.lock = lock;
     }
 

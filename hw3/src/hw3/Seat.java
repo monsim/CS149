@@ -2,41 +2,31 @@ package hw3;
 
 public class Seat
 {
-
     private int seatNumber;
     private Customer seatTaken;
 
     /**
      * Constructor
-     * @param int num sets seat number
+     * @param int num initializes seat number
      */
-    public Seat(int num)
+    public Seat(int seatNumber)
     {
-        seatNumber = num;
+        this.seatNumber = seatNumber;
         seatTaken = null;
     }
 
     /**
-     * Assigns a Customer to this Seat
-     * @param Customer c - customer to assign
+     * Assigns Customer to a seat
+     * @param Customer customer customer to assign
      */
-    public void assignSeat(Customer c)
+    public void assignSeat(Customer customer)
 
     {
-        seatTaken = c;
+        seatTaken = customer;
     }
 
     /**
-     * Checks if this Seat is taken
-     * @return boolean - true if seat empty else false 
-     */
-    public boolean isSeatEmpty()
-    {
-        return seatTaken == null;
-    }
-
-    /**
-     * Getter method to access seat number
+     * Gets the seatNumber
      * @return int seatNumber
      */
     public int getSeatNumber() {
@@ -44,10 +34,19 @@ public class Seat
     }
 
     /**
-     * Getter method to access Customer assigned to this seat
+     * Gets the Customer seated in the seat
      * @return seatTaken
      */
     public Customer getCustomer(){
         return seatTaken;
+    }
+    
+    /**
+     * Checks if seat us empty
+     * @return boolean returns true if empty else false
+     */
+    public boolean isSeatEmpty()
+    {
+        return seatTaken == null;
     }
 }
