@@ -1,0 +1,1512 @@
+N = 15
+
+
+Monsis-MacBook-Pro:src monsi$ javac hw3/Tester.java
+Monsis-MacBook-Pro:src monsi$ java hw3/Tester 15
+
+
+0:00  Customer 9 just arrived at seller L6
+0:00  Service start time: Customer 9
+0:06  L6 - Success! Your seat is 91
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   L601       -       -       -       -       -       -       -       -       - 
+
+0:00  Customer 8 just arrived at seller L5
+0:00  Service start time: Customer 8
+0:04  L5 - Success! Your seat is 92
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   L601    L501       -       -       -       -       -       -       -       - 
+
+0:00  Customer 6 just arrived at seller L3
+0:00  Service start time: Customer 6
+0:05  L3 - Success! Your seat is 93
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   L601    L501    L301       -       -       -       -       -       -       - 
+
+0:00  Customer 5 just arrived at seller L2
+0:00  Service start time: Customer 5
+0:04  L2 - Success! Your seat is 94
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   L601    L501    L301    L201       -       -       -       -       -       - 
+
+0:01  Customer 0 just arrived at seller H1
+0:01  Service start time: Customer 0
+0:02  H1 - Success! Your seat is 1
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   H101       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   L601    L501    L301    L201       -       -       -       -       -       - 
+
+0:01  Customer 1 just arrived at seller M1
+0:01  Service start time: Customer 1
+0:04  M1 - Success! Your seat is 51
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   H101       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   M101       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   L601    L501    L301    L201       -       -       -       -       -       - 
+
+0:01  Customer 7 just arrived at seller L4
+0:01  Service start time: Customer 7
+0:08  L4 - Success! Your seat is 95
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   H101       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   M101       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   L601    L501    L301    L201    L401       -       -       -       -       - 
+
+0:03  Customer 0 just arrived at seller H1
+0:03  Service start time: Customer 0
+0:04  H1 - Success! Your seat is 2
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   H101    H102       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   M101       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   L601    L501    L301    L201    L401       -       -       -       -       - 
+
+0:04  Customer 2 just arrived at seller M2
+0:04  Service start time: Customer 2
+0:06  M2 - Success! Your seat is 52
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   H101    H102       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   M101    M201       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   L601    L501    L301    L201    L401       -       -       -       -       - 
+
+0:04  Customer 0 just arrived at seller H1
+0:04  Service start time: Customer 0
+0:05  H1 - Success! Your seat is 3
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   H101    H102    H103       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   M101    M201       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   L601    L501    L301    L201    L401       -       -       -       -       - 
+
+0:04  Customer 1 just arrived at seller M1
+0:04  Service start time: Customer 1
+0:07  M1 - Success! Your seat is 53
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   H101    H102    H103       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   M101    M201    M102       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   L601    L501    L301    L201    L401       -       -       -       -       - 
+
+0:00  Customer 8 just arrived at seller L5
+0:04  Service start time: Customer 8
+0:08  L5 - Success! Your seat is 96
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   H101    H102    H103       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   M101    M201    M102       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   L601    L501    L301    L201    L401    L502       -       -       -       - 
+
+0:01  Customer 5 just arrived at seller L2
+0:04  Service start time: Customer 5
+0:08  L2 - Success! Your seat is 97
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   H101    H102    H103       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   M101    M201    M102       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   L601    L501    L301    L201    L401    L502    L202       -       -       - 
+
+0:05  Customer 3 just arrived at seller M3
+0:05  Service start time: Customer 3
+0:07  M3 - Success! Your seat is 54
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   H101    H102    H103       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   M101    M201    M102    M301       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   L601    L501    L301    L201    L401    L502    L202       -       -       - 
+
+0:05  Customer 6 just arrived at seller L3
+0:05  Service start time: Customer 6
+0:10  L3 - Success! Your seat is 98
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   H101    H102    H103       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   M101    M201    M102    M301       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   L601    L501    L301    L201    L401    L502    L202    L302       -       - 
+
+0:06  Customer 9 just arrived at seller L6
+0:06  Service start time: Customer 9
+0:12  L6 - Success! Your seat is 99
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   H101    H102    H103       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   M101    M201    M102    M301       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   L601    L501    L301    L201    L401    L502    L202    L302    L602       - 
+
+0:07  Customer 0 just arrived at seller H1
+0:07  Service start time: Customer 0
+0:08  H1 - Success! Your seat is 4
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   H101    H102    H103    H104       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   M101    M201    M102    M301       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   L601    L501    L301    L201    L401    L502    L202    L302    L602       - 
+
+0:07  Customer 3 just arrived at seller M3
+0:07  Service start time: Customer 3
+0:09  M3 - Success! Your seat is 55
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   H101    H102    H103    H104       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   M101    M201    M102    M301    M302       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   L601    L501    L301    L201    L401    L502    L202    L302    L602       - 
+
+0:07  Customer 1 just arrived at seller M1
+0:07  Service start time: Customer 1
+0:10  M1 - Success! Your seat is 56
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   H101    H102    H103    H104       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   M101    M201    M102    M301    M302    M103       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   L601    L501    L301    L201    L401    L502    L202    L302    L602       - 
+
+0:05  Customer 7 just arrived at seller L4
+0:08  Service start time: Customer 7
+0:15  L4 - Success! Your seat is 100
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   H101    H102    H103    H104       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   M101    M201    M102    M301    M302    M103       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   L601    L501    L301    L201    L401    L502    L202    L302    L602    L402 
+
+0:06  Customer 8 just arrived at seller L5
+0:08  Service start time: Customer 8
+0:12  L5 - Success! Your seat is 81
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   H101    H102    H103    H104       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   M101    M201    M102    M301    M302    M103       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   L503       -       -       -       -       -       -       -       -       - 
+   L601    L501    L301    L201    L401    L502    L202    L302    L602    L402 
+
+0:04  Customer 5 just arrived at seller L2
+0:08  Service start time: Customer 5
+0:12  L2 - Success! Your seat is 82
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   H101    H102    H103    H104       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   M101    M201    M102    M301    M302    M103       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   L503    L203       -       -       -       -       -       -       -       - 
+   L601    L501    L301    L201    L401    L502    L202    L302    L602    L402 
+
+0:09  Customer 3 just arrived at seller M3
+0:09  Service start time: Customer 3
+0:11  M3 - Success! Your seat is 57
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   H101    H102    H103    H104       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   M101    M201    M102    M301    M302    M103    M303       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   L503    L203       -       -       -       -       -       -       -       - 
+   L601    L501    L301    L201    L401    L502    L202    L302    L602    L402 
+
+0:10  Customer 4 just arrived at seller L1
+0:10  Service start time: Customer 4
+0:14  L1 - Success! Your seat is 83
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   H101    H102    H103    H104       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   M101    M201    M102    M301    M302    M103    M303       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   L503    L203    L101       -       -       -       -       -       -       - 
+   L601    L501    L301    L201    L401    L502    L202    L302    L602    L402 
+
+0:09  Customer 1 just arrived at seller M1
+0:10  Service start time: Customer 1
+0:13  M1 - Success! Your seat is 58
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   H101    H102    H103    H104       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   M101    M201    M102    M301    M302    M103    M303    M104       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   L503    L203    L101       -       -       -       -       -       -       - 
+   L601    L501    L301    L201    L401    L502    L202    L302    L602    L402 
+
+0:07  Customer 6 just arrived at seller L3
+0:10  Service start time: Customer 6
+0:15  L3 - Success! Your seat is 84
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   H101    H102    H103    H104       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   M101    M201    M102    M301    M302    M103    M303    M104       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   L503    L203    L101    L303       -       -       -       -       -       - 
+   L601    L501    L301    L201    L401    L502    L202    L302    L602    L402 
+
+0:12  Customer 3 just arrived at seller M3
+0:12  Service start time: Customer 3
+0:14  M3 - Success! Your seat is 59
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   H101    H102    H103    H104       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   M101    M201    M102    M301    M302    M103    M303    M104    M304       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   L503    L203    L101    L303       -       -       -       -       -       - 
+   L601    L501    L301    L201    L401    L502    L202    L302    L602    L402 
+
+0:08  Customer 9 just arrived at seller L6
+0:12  Service start time: Customer 9
+0:18  L6 - Success! Your seat is 85
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   H101    H102    H103    H104       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   M101    M201    M102    M301    M302    M103    M303    M104    M304       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   L503    L203    L101    L303    L603       -       -       -       -       - 
+   L601    L501    L301    L201    L401    L502    L202    L302    L602    L402 
+
+0:05  Customer 5 just arrived at seller L2
+0:12  Service start time: Customer 5
+0:16  L2 - Success! Your seat is 86
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   H101    H102    H103    H104       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   M101    M201    M102    M301    M302    M103    M303    M104    M304       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   L503    L203    L101    L303    L603    L204       -       -       -       - 
+   L601    L501    L301    L201    L401    L502    L202    L302    L602    L402 
+
+0:13  Customer 0 just arrived at seller H1
+0:13  Service start time: Customer 0
+0:14  H1 - Success! Your seat is 5
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   H101    H102    H103    H104    H105       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   M101    M201    M102    M301    M302    M103    M303    M104    M304       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   L503    L203    L101    L303    L603    L204       -       -       -       - 
+   L601    L501    L301    L201    L401    L502    L202    L302    L602    L402 
+
+0:13  Customer 8 just arrived at seller L5
+0:13  Service start time: Customer 8
+0:17  L5 - Success! Your seat is 87
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   H101    H102    H103    H104    H105       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   M101    M201    M102    M301    M302    M103    M303    M104    M304       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   L503    L203    L101    L303    L603    L204    L504       -       -       - 
+   L601    L501    L301    L201    L401    L502    L202    L302    L602    L402 
+
+0:14  Customer 1 just arrived at seller M1
+0:14  Service start time: Customer 1
+0:17  M1 - Success! Your seat is 60
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   H101    H102    H103    H104    H105       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   M101    M201    M102    M301    M302    M103    M303    M104    M304    M105 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   L503    L203    L101    L303    L603    L204    L504       -       -       - 
+   L601    L501    L301    L201    L401    L502    L202    L302    L602    L402 
+
+0:12  Customer 4 just arrived at seller L1
+0:14  Service start time: Customer 4
+0:18  L1 - Success! Your seat is 88
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   H101    H102    H103    H104    H105       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   M101    M201    M102    M301    M302    M103    M303    M104    M304    M105 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   L503    L203    L101    L303    L603    L204    L504    L102       -       - 
+   L601    L501    L301    L201    L401    L502    L202    L302    L602    L402 
+
+0:15  Customer 3 just arrived at seller M3
+0:15  Service start time: Customer 3
+0:17  M3 - Success! Your seat is 61
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   H101    H102    H103    H104    H105       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   M101    M201    M102    M301    M302    M103    M303    M104    M304    M105 
+   M305       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   L503    L203    L101    L303    L603    L204    L504    L102       -       - 
+   L601    L501    L301    L201    L401    L502    L202    L302    L602    L402 
+
+0:06  Customer 7 just arrived at seller L4
+0:15  Service start time: Customer 7
+0:22  L4 - Success! Your seat is 89
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   H101    H102    H103    H104    H105       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   M101    M201    M102    M301    M302    M103    M303    M104    M304    M105 
+   M305       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   L503    L203    L101    L303    L603    L204    L504    L102    L403       - 
+   L601    L501    L301    L201    L401    L502    L202    L302    L602    L402 
+
+0:09  Customer 6 just arrived at seller L3
+0:15  Service start time: Customer 6
+0:20  L3 - Success! Your seat is 90
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   H101    H102    H103    H104    H105       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   M101    M201    M102    M301    M302    M103    M303    M104    M304    M105 
+   M305       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   L503    L203    L101    L303    L603    L204    L504    L102    L403    L304 
+   L601    L501    L301    L201    L401    L502    L202    L302    L602    L402 
+
+0:16  Customer 0 just arrived at seller H1
+0:16  Service start time: Customer 0
+0:17  H1 - Success! Your seat is 6
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   H101    H102    H103    H104    H105    H106       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   M101    M201    M102    M301    M302    M103    M303    M104    M304    M105 
+   M305       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   L503    L203    L101    L303    L603    L204    L504    L102    L403    L304 
+   L601    L501    L301    L201    L401    L502    L202    L302    L602    L402 
+
+0:08  Customer 5 just arrived at seller L2
+0:16  Service start time: Customer 5
+0:20  L2 - Success! Your seat is 71
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   H101    H102    H103    H104    H105    H106       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   M101    M201    M102    M301    M302    M103    M303    M104    M304    M105 
+   M305       -       -       -       -       -       -       -       -       - 
+   L205       -       -       -       -       -       -       -       -       - 
+   L503    L203    L101    L303    L603    L204    L504    L102    L403    L304 
+   L601    L501    L301    L201    L401    L502    L202    L302    L602    L402 
+
+0:17  Customer 2 just arrived at seller M2
+0:17  Service start time: Customer 2
+0:19  M2 - Success! Your seat is 62
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   H101    H102    H103    H104    H105    H106       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   M101    M201    M102    M301    M302    M103    M303    M104    M304    M105 
+   M305    M202       -       -       -       -       -       -       -       - 
+   L205       -       -       -       -       -       -       -       -       - 
+   L503    L203    L101    L303    L603    L204    L504    L102    L403    L304 
+   L601    L501    L301    L201    L401    L502    L202    L302    L602    L402 
+
+0:16  Customer 3 just arrived at seller M3
+0:17  Service start time: Customer 3
+0:19  M3 - Success! Your seat is 63
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   H101    H102    H103    H104    H105    H106       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   M101    M201    M102    M301    M302    M103    M303    M104    M304    M105 
+   M305    M202    M306       -       -       -       -       -       -       - 
+   L205       -       -       -       -       -       -       -       -       - 
+   L503    L203    L101    L303    L603    L204    L504    L102    L403    L304 
+   L601    L501    L301    L201    L401    L502    L202    L302    L602    L402 
+
+0:16  Customer 8 just arrived at seller L5
+0:17  Service start time: Customer 8
+0:21  L5 - Success! Your seat is 72
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   H101    H102    H103    H104    H105    H106       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   M101    M201    M102    M301    M302    M103    M303    M104    M304    M105 
+   M305    M202    M306       -       -       -       -       -       -       - 
+   L205    L505       -       -       -       -       -       -       -       - 
+   L503    L203    L101    L303    L603    L204    L504    L102    L403    L304 
+   L601    L501    L301    L201    L401    L502    L202    L302    L602    L402 
+
+0:14  Customer 9 just arrived at seller L6
+0:18  Service start time: Customer 9
+0:24  L6 - Success! Your seat is 73
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   H101    H102    H103    H104    H105    H106       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   M101    M201    M102    M301    M302    M103    M303    M104    M304    M105 
+   M305    M202    M306       -       -       -       -       -       -       - 
+   L205    L505    L604       -       -       -       -       -       -       - 
+   L503    L203    L101    L303    L603    L204    L504    L102    L403    L304 
+   L601    L501    L301    L201    L401    L502    L202    L302    L602    L402 
+
+0:19  Customer 0 just arrived at seller H1
+0:19  Service start time: Customer 0
+0:20  H1 - Success! Your seat is 7
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   H101    H102    H103    H104    H105    H106    H107       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   M101    M201    M102    M301    M302    M103    M303    M104    M304    M105 
+   M305    M202    M306       -       -       -       -       -       -       - 
+   L205    L505    L604       -       -       -       -       -       -       - 
+   L503    L203    L101    L303    L603    L204    L504    L102    L403    L304 
+   L601    L501    L301    L201    L401    L502    L202    L302    L602    L402 
+
+0:17  Customer 2 just arrived at seller M2
+0:19  Service start time: Customer 2
+0:21  M2 - Success! Your seat is 64
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   H101    H102    H103    H104    H105    H106    H107       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   M101    M201    M102    M301    M302    M103    M303    M104    M304    M105 
+   M305    M202    M306    M203       -       -       -       -       -       - 
+   L205    L505    L604       -       -       -       -       -       -       - 
+   L503    L203    L101    L303    L603    L204    L504    L102    L403    L304 
+   L601    L501    L301    L201    L401    L502    L202    L302    L602    L402 
+
+0:20  Customer 3 just arrived at seller M3
+0:20  Service start time: Customer 3
+0:22  M3 - Success! Your seat is 65
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   H101    H102    H103    H104    H105    H106    H107       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   M101    M201    M102    M301    M302    M103    M303    M104    M304    M105 
+   M305    M202    M306    M203    M307       -       -       -       -       - 
+   L205    L505    L604       -       -       -       -       -       -       - 
+   L503    L203    L101    L303    L603    L204    L504    L102    L403    L304 
+   L601    L501    L301    L201    L401    L502    L202    L302    L602    L402 
+
+0:20  Customer 1 just arrived at seller M1
+0:20  Service start time: Customer 1
+0:23  M1 - Success! Your seat is 66
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   H101    H102    H103    H104    H105    H106    H107       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   M101    M201    M102    M301    M302    M103    M303    M104    M304    M105 
+   M305    M202    M306    M203    M307    M106       -       -       -       - 
+   L205    L505    L604       -       -       -       -       -       -       - 
+   L503    L203    L101    L303    L603    L204    L504    L102    L403    L304 
+   L601    L501    L301    L201    L401    L502    L202    L302    L602    L402 
+
+0:13  Customer 6 just arrived at seller L3
+0:20  Service start time: Customer 6
+0:25  L3 - Success! Your seat is 74
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   H101    H102    H103    H104    H105    H106    H107       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   M101    M201    M102    M301    M302    M103    M303    M104    M304    M105 
+   M305    M202    M306    M203    M307    M106       -       -       -       - 
+   L205    L505    L604    L305       -       -       -       -       -       - 
+   L503    L203    L101    L303    L603    L204    L504    L102    L403    L304 
+   L601    L501    L301    L201    L401    L502    L202    L302    L602    L402 
+
+0:20  Customer 5 just arrived at seller L2
+0:20  Service start time: Customer 5
+0:24  L2 - Success! Your seat is 75
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   H101    H102    H103    H104    H105    H106    H107       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   M101    M201    M102    M301    M302    M103    M303    M104    M304    M105 
+   M305    M202    M306    M203    M307    M106       -       -       -       - 
+   L205    L505    L604    L305    L206       -       -       -       -       - 
+   L503    L203    L101    L303    L603    L204    L504    L102    L403    L304 
+   L601    L501    L301    L201    L401    L502    L202    L302    L602    L402 
+
+0:21  Customer 2 just arrived at seller M2
+0:21  Service start time: Customer 2
+0:23  M2 - Success! Your seat is 67
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   H101    H102    H103    H104    H105    H106    H107       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   M101    M201    M102    M301    M302    M103    M303    M104    M304    M105 
+   M305    M202    M306    M203    M307    M106    M204       -       -       - 
+   L205    L505    L604    L305    L206       -       -       -       -       - 
+   L503    L203    L101    L303    L603    L204    L504    L102    L403    L304 
+   L601    L501    L301    L201    L401    L502    L202    L302    L602    L402 
+
+0:21  Customer 8 just arrived at seller L5
+0:21  Service start time: Customer 8
+0:25  L5 - Success! Your seat is 76
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   H101    H102    H103    H104    H105    H106    H107       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   M101    M201    M102    M301    M302    M103    M303    M104    M304    M105 
+   M305    M202    M306    M203    M307    M106    M204       -       -       - 
+   L205    L505    L604    L305    L206    L506       -       -       -       - 
+   L503    L203    L101    L303    L603    L204    L504    L102    L403    L304 
+   L601    L501    L301    L201    L401    L502    L202    L302    L602    L402 
+
+0:07  Customer 7 just arrived at seller L4
+0:22  Service start time: Customer 7
+0:29  L4 - Success! Your seat is 77
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   H101    H102    H103    H104    H105    H106    H107       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   M101    M201    M102    M301    M302    M103    M303    M104    M304    M105 
+   M305    M202    M306    M203    M307    M106    M204       -       -       - 
+   L205    L505    L604    L305    L206    L506    L404       -       -       - 
+   L503    L203    L101    L303    L603    L204    L504    L102    L403    L304 
+   L601    L501    L301    L201    L401    L502    L202    L302    L602    L402 
+
+0:21  Customer 1 just arrived at seller M1
+0:23  Service start time: Customer 1
+0:26  M1 - Success! Your seat is 68
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   H101    H102    H103    H104    H105    H106    H107       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   M101    M201    M102    M301    M302    M103    M303    M104    M304    M105 
+   M305    M202    M306    M203    M307    M106    M204    M107       -       - 
+   L205    L505    L604    L305    L206    L506    L404       -       -       - 
+   L503    L203    L101    L303    L603    L204    L504    L102    L403    L304 
+   L601    L501    L301    L201    L401    L502    L202    L302    L602    L402 
+
+0:24  Customer 0 just arrived at seller H1
+0:24  Service start time: Customer 0
+0:25  H1 - Success! Your seat is 8
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   H101    H102    H103    H104    H105    H106    H107    H108       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   M101    M201    M102    M301    M302    M103    M303    M104    M304    M105 
+   M305    M202    M306    M203    M307    M106    M204    M107       -       - 
+   L205    L505    L604    L305    L206    L506    L404       -       -       - 
+   L503    L203    L101    L303    L603    L204    L504    L102    L403    L304 
+   L601    L501    L301    L201    L401    L502    L202    L302    L602    L402 
+
+0:24  Customer 4 just arrived at seller L1
+0:24  Service start time: Customer 4
+0:28  L1 - Success! Your seat is 78
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   H101    H102    H103    H104    H105    H106    H107    H108       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   M101    M201    M102    M301    M302    M103    M303    M104    M304    M105 
+   M305    M202    M306    M203    M307    M106    M204    M107       -       - 
+   L205    L505    L604    L305    L206    L506    L404    L103       -       - 
+   L503    L203    L101    L303    L603    L204    L504    L102    L403    L304 
+   L601    L501    L301    L201    L401    L502    L202    L302    L602    L402 
+
+0:24  Customer 2 just arrived at seller M2
+0:24  Service start time: Customer 2
+0:26  M2 - Success! Your seat is 69
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   H101    H102    H103    H104    H105    H106    H107    H108       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   M101    M201    M102    M301    M302    M103    M303    M104    M304    M105 
+   M305    M202    M306    M203    M307    M106    M204    M107    M205       - 
+   L205    L505    L604    L305    L206    L506    L404    L103       -       - 
+   L503    L203    L101    L303    L603    L204    L504    L102    L403    L304 
+   L601    L501    L301    L201    L401    L502    L202    L302    L602    L402 
+
+0:18  Customer 9 just arrived at seller L6
+0:24  Service start time: Customer 9
+0:30  L6 - Success! Your seat is 79
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   H101    H102    H103    H104    H105    H106    H107    H108       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   M101    M201    M102    M301    M302    M103    M303    M104    M304    M105 
+   M305    M202    M306    M203    M307    M106    M204    M107    M205       - 
+   L205    L505    L604    L305    L206    L506    L404    L103    L605       - 
+   L503    L203    L101    L303    L603    L204    L504    L102    L403    L304 
+   L601    L501    L301    L201    L401    L502    L202    L302    L602    L402 
+
+0:25  Customer 5 just arrived at seller L2
+0:25  Service start time: Customer 5
+0:29  L2 - Success! Your seat is 80
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   H101    H102    H103    H104    H105    H106    H107    H108       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   M101    M201    M102    M301    M302    M103    M303    M104    M304    M105 
+   M305    M202    M306    M203    M307    M106    M204    M107    M205       - 
+   L205    L505    L604    L305    L206    L506    L404    L103    L605    L207 
+   L503    L203    L101    L303    L603    L204    L504    L102    L403    L304 
+   L601    L501    L301    L201    L401    L502    L202    L302    L602    L402 
+
+0:24  Customer 0 just arrived at seller H1
+0:25  Service start time: Customer 0
+0:26  H1 - Success! Your seat is 9
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   H101    H102    H103    H104    H105    H106    H107    H108    H109       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   M101    M201    M102    M301    M302    M103    M303    M104    M304    M105 
+   M305    M202    M306    M203    M307    M106    M204    M107    M205       - 
+   L205    L505    L604    L305    L206    L506    L404    L103    L605    L207 
+   L503    L203    L101    L303    L603    L204    L504    L102    L403    L304 
+   L601    L501    L301    L201    L401    L502    L202    L302    L602    L402 
+
+0:25  Customer 8 just arrived at seller L5
+0:25  Service start time: Customer 8
+0:29  L5 - Success! Your seat is 70
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   H101    H102    H103    H104    H105    H106    H107    H108    H109       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   M101    M201    M102    M301    M302    M103    M303    M104    M304    M105 
+   M305    M202    M306    M203    M307    M106    M204    M107    M205    L507 
+   L205    L505    L604    L305    L206    L506    L404    L103    L605    L207 
+   L503    L203    L101    L303    L603    L204    L504    L102    L403    L304 
+   L601    L501    L301    L201    L401    L502    L202    L302    L602    L402 
+
+0:16  Customer 6 just arrived at seller L3
+0:25  Service start time: Customer 6
+0:30  L3 - Success! Your seat is 41
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   H101    H102    H103    H104    H105    H106    H107    H108    H109       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   L306       -       -       -       -       -       -       -       -       - 
+   M101    M201    M102    M301    M302    M103    M303    M104    M304    M105 
+   M305    M202    M306    M203    M307    M106    M204    M107    M205    L507 
+   L205    L505    L604    L305    L206    L506    L404    L103    L605    L207 
+   L503    L203    L101    L303    L603    L204    L504    L102    L403    L304 
+   L601    L501    L301    L201    L401    L502    L202    L302    L602    L402 
+
+0:26  Customer 3 just arrived at seller M3
+0:26  Service start time: Customer 3
+0:28  M3 - Success! Your seat is 42
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   H101    H102    H103    H104    H105    H106    H107    H108    H109       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   L306    M308       -       -       -       -       -       -       -       - 
+   M101    M201    M102    M301    M302    M103    M303    M104    M304    M105 
+   M305    M202    M306    M203    M307    M106    M204    M107    M205    L507 
+   L205    L505    L604    L305    L206    L506    L404    L103    L605    L207 
+   L503    L203    L101    L303    L603    L204    L504    L102    L403    L304 
+   L601    L501    L301    L201    L401    L502    L202    L302    L602    L402 
+
+0:25  Customer 2 just arrived at seller M2
+0:26  Service start time: Customer 2
+0:28  M2 - Success! Your seat is 43
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   H101    H102    H103    H104    H105    H106    H107    H108    H109       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   L306    M308    M206       -       -       -       -       -       -       - 
+   M101    M201    M102    M301    M302    M103    M303    M104    M304    M105 
+   M305    M202    M306    M203    M307    M106    M204    M107    M205    L507 
+   L205    L505    L604    L305    L206    L506    L404    L103    L605    L207 
+   L503    L203    L101    L303    L603    L204    L504    L102    L403    L304 
+   L601    L501    L301    L201    L401    L502    L202    L302    L602    L402 
+
+0:23  Customer 1 just arrived at seller M1
+0:26  Service start time: Customer 1
+0:29  M1 - Success! Your seat is 44
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   H101    H102    H103    H104    H105    H106    H107    H108    H109       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   L306    M308    M206    M108       -       -       -       -       -       - 
+   M101    M201    M102    M301    M302    M103    M303    M104    M304    M105 
+   M305    M202    M306    M203    M307    M106    M204    M107    M205    L507 
+   L205    L505    L604    L305    L206    L506    L404    L103    L605    L207 
+   L503    L203    L101    L303    L603    L204    L504    L102    L403    L304 
+   L601    L501    L301    L201    L401    L502    L202    L302    L602    L402 
+
+0:26  Customer 2 just arrived at seller M2
+0:28  Service start time: Customer 2
+0:30  M2 - Success! Your seat is 45
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   H101    H102    H103    H104    H105    H106    H107    H108    H109       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   L306    M308    M206    M108    M207       -       -       -       -       - 
+   M101    M201    M102    M301    M302    M103    M303    M104    M304    M105 
+   M305    M202    M306    M203    M307    M106    M204    M107    M205    L507 
+   L205    L505    L604    L305    L206    L506    L404    L103    L605    L207 
+   L503    L203    L101    L303    L603    L204    L504    L102    L403    L304 
+   L601    L501    L301    L201    L401    L502    L202    L302    L602    L402 
+
+0:13  Customer 7 just arrived at seller L4
+0:29  Service start time: Customer 7
+0:36  L4 - Success! Your seat is 46
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   H101    H102    H103    H104    H105    H106    H107    H108    H109       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   L306    M308    M206    M108    M207    L405       -       -       -       - 
+   M101    M201    M102    M301    M302    M103    M303    M104    M304    M105 
+   M305    M202    M306    M203    M307    M106    M204    M107    M205    L507 
+   L205    L505    L604    L305    L206    L506    L404    L103    L605    L207 
+   L503    L203    L101    L303    L603    L204    L504    L102    L403    L304 
+   L601    L501    L301    L201    L401    L502    L202    L302    L602    L402 
+
+0:29  Customer 8 just arrived at seller L5
+0:29  Service start time: Customer 8
+0:33  L5 - Success! Your seat is 47
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   H101    H102    H103    H104    H105    H106    H107    H108    H109       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   L306    M308    M206    M108    M207    L405    L508       -       -       - 
+   M101    M201    M102    M301    M302    M103    M303    M104    M304    M105 
+   M305    M202    M306    M203    M307    M106    M204    M107    M205    L507 
+   L205    L505    L604    L305    L206    L506    L404    L103    L605    L207 
+   L503    L203    L101    L303    L603    L204    L504    L102    L403    L304 
+   L601    L501    L301    L201    L401    L502    L202    L302    L602    L402 
+
+0:20  Customer 9 just arrived at seller L6
+0:30  Service start time: Customer 9
+0:36  L6 - Success! Your seat is 48
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   H101    H102    H103    H104    H105    H106    H107    H108    H109       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   L306    M308    M206    M108    M207    L405    L508    L606       -       - 
+   M101    M201    M102    M301    M302    M103    M303    M104    M304    M105 
+   M305    M202    M306    M203    M307    M106    M204    M107    M205    L507 
+   L205    L505    L604    L305    L206    L506    L404    L103    L605    L207 
+   L503    L203    L101    L303    L603    L204    L504    L102    L403    L304 
+   L601    L501    L301    L201    L401    L502    L202    L302    L602    L402 
+
+0:19  Customer 6 just arrived at seller L3
+0:30  Service start time: Customer 6
+0:35  L3 - Success! Your seat is 49
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   H101    H102    H103    H104    H105    H106    H107    H108    H109       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   L306    M308    M206    M108    M207    L405    L508    L606    L307       - 
+   M101    M201    M102    M301    M302    M103    M303    M104    M304    M105 
+   M305    M202    M306    M203    M307    M106    M204    M107    M205    L507 
+   L205    L505    L604    L305    L206    L506    L404    L103    L605    L207 
+   L503    L203    L101    L303    L603    L204    L504    L102    L403    L304 
+   L601    L501    L301    L201    L401    L502    L202    L302    L602    L402 
+
+0:31  Customer 1 just arrived at seller M1
+0:31  Service start time: Customer 1
+0:34  M1 - Success! Your seat is 50
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   H101    H102    H103    H104    H105    H106    H107    H108    H109       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   L306    M308    M206    M108    M207    L405    L508    L606    L307    M109 
+   M101    M201    M102    M301    M302    M103    M303    M104    M304    M105 
+   M305    M202    M306    M203    M307    M106    M204    M107    M205    L507 
+   L205    L505    L604    L305    L206    L506    L404    L103    L605    L207 
+   L503    L203    L101    L303    L603    L204    L504    L102    L403    L304 
+   L601    L501    L301    L201    L401    L502    L202    L302    L602    L402 
+
+0:32  Customer 4 just arrived at seller L1
+0:32  Service start time: Customer 4
+0:36  L1 - Success! Your seat is 31
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   H101    H102    H103    H104    H105    H106    H107    H108    H109       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   L104       -       -       -       -       -       -       -       -       - 
+   L306    M308    M206    M108    M207    L405    L508    L606    L307    M109 
+   M101    M201    M102    M301    M302    M103    M303    M104    M304    M105 
+   M305    M202    M306    M203    M307    M106    M204    M107    M205    L507 
+   L205    L505    L604    L305    L206    L506    L404    L103    L605    L207 
+   L503    L203    L101    L303    L603    L204    L504    L102    L403    L304 
+   L601    L501    L301    L201    L401    L502    L202    L302    L602    L402 
+
+0:32  Customer 2 just arrived at seller M2
+0:32  Service start time: Customer 2
+0:34  M2 - Success! Your seat is 32
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   H101    H102    H103    H104    H105    H106    H107    H108    H109       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   L104    M208       -       -       -       -       -       -       -       - 
+   L306    M308    M206    M108    M207    L405    L508    L606    L307    M109 
+   M101    M201    M102    M301    M302    M103    M303    M104    M304    M105 
+   M305    M202    M306    M203    M307    M106    M204    M107    M205    L507 
+   L205    L505    L604    L305    L206    L506    L404    L103    L605    L207 
+   L503    L203    L101    L303    L603    L204    L504    L102    L403    L304 
+   L601    L501    L301    L201    L401    L502    L202    L302    L602    L402 
+
+0:31  Customer 8 just arrived at seller L5
+0:33  Service start time: Customer 8
+0:37  L5 - Success! Your seat is 33
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   H101    H102    H103    H104    H105    H106    H107    H108    H109       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   L104    M208    L509       -       -       -       -       -       -       - 
+   L306    M308    M206    M108    M207    L405    L508    L606    L307    M109 
+   M101    M201    M102    M301    M302    M103    M303    M104    M304    M105 
+   M305    M202    M306    M203    M307    M106    M204    M107    M205    L507 
+   L205    L505    L604    L305    L206    L506    L404    L103    L605    L207 
+   L503    L203    L101    L303    L603    L204    L504    L102    L403    L304 
+   L601    L501    L301    L201    L401    L502    L202    L302    L602    L402 
+
+0:34  Customer 5 just arrived at seller L2
+0:34  Service start time: Customer 5
+0:38  L2 - Success! Your seat is 34
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   H101    H102    H103    H104    H105    H106    H107    H108    H109       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   L104    M208    L509    L208       -       -       -       -       -       - 
+   L306    M308    M206    M108    M207    L405    L508    L606    L307    M109 
+   M101    M201    M102    M301    M302    M103    M303    M104    M304    M105 
+   M305    M202    M306    M203    M307    M106    M204    M107    M205    L507 
+   L205    L505    L604    L305    L206    L506    L404    L103    L605    L207 
+   L503    L203    L101    L303    L603    L204    L504    L102    L403    L304 
+   L601    L501    L301    L201    L401    L502    L202    L302    L602    L402 
+
+0:34  Customer 3 just arrived at seller M3
+0:34  Service start time: Customer 3
+0:36  M3 - Success! Your seat is 35
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   H101    H102    H103    H104    H105    H106    H107    H108    H109       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   L104    M208    L509    L208    M309       -       -       -       -       - 
+   L306    M308    M206    M108    M207    L405    L508    L606    L307    M109 
+   M101    M201    M102    M301    M302    M103    M303    M104    M304    M105 
+   M305    M202    M306    M203    M307    M106    M204    M107    M205    L507 
+   L205    L505    L604    L305    L206    L506    L404    L103    L605    L207 
+   L503    L203    L101    L303    L603    L204    L504    L102    L403    L304 
+   L601    L501    L301    L201    L401    L502    L202    L302    L602    L402 
+
+0:33  Customer 1 just arrived at seller M1
+0:34  Service start time: Customer 1
+0:37  M1 - Success! Your seat is 36
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   H101    H102    H103    H104    H105    H106    H107    H108    H109       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   L104    M208    L509    L208    M309    M110       -       -       -       - 
+   L306    M308    M206    M108    M207    L405    L508    L606    L307    M109 
+   M101    M201    M102    M301    M302    M103    M303    M104    M304    M105 
+   M305    M202    M306    M203    M307    M106    M204    M107    M205    L507 
+   L205    L505    L604    L305    L206    L506    L404    L103    L605    L207 
+   L503    L203    L101    L303    L603    L204    L504    L102    L403    L304 
+   L601    L501    L301    L201    L401    L502    L202    L302    L602    L402 
+
+0:25  Customer 6 just arrived at seller L3
+0:35  Service start time: Customer 6
+0:40  L3 - Success! Your seat is 37
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   H101    H102    H103    H104    H105    H106    H107    H108    H109       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   L104    M208    L509    L208    M309    M110    L308       -       -       - 
+   L306    M308    M206    M108    M207    L405    L508    L606    L307    M109 
+   M101    M201    M102    M301    M302    M103    M303    M104    M304    M105 
+   M305    M202    M306    M203    M307    M106    M204    M107    M205    L507 
+   L205    L505    L604    L305    L206    L506    L404    L103    L605    L207 
+   L503    L203    L101    L303    L603    L204    L504    L102    L403    L304 
+   L601    L501    L301    L201    L401    L502    L202    L302    L602    L402 
+
+0:36  Customer 2 just arrived at seller M2
+0:36  Service start time: Customer 2
+0:38  M2 - Success! Your seat is 38
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   H101    H102    H103    H104    H105    H106    H107    H108    H109       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   L104    M208    L509    L208    M309    M110    L308    M209       -       - 
+   L306    M308    M206    M108    M207    L405    L508    L606    L307    M109 
+   M101    M201    M102    M301    M302    M103    M303    M104    M304    M105 
+   M305    M202    M306    M203    M307    M106    M204    M107    M205    L507 
+   L205    L505    L604    L305    L206    L506    L404    L103    L605    L207 
+   L503    L203    L101    L303    L603    L204    L504    L102    L403    L304 
+   L601    L501    L301    L201    L401    L502    L202    L302    L602    L402 
+
+0:34  Customer 4 just arrived at seller L1
+0:36  Service start time: Customer 4
+0:40  L1 - Success! Your seat is 39
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   H101    H102    H103    H104    H105    H106    H107    H108    H109       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   L104    M208    L509    L208    M309    M110    L308    M209    L105       - 
+   L306    M308    M206    M108    M207    L405    L508    L606    L307    M109 
+   M101    M201    M102    M301    M302    M103    M303    M104    M304    M105 
+   M305    M202    M306    M203    M307    M106    M204    M107    M205    L507 
+   L205    L505    L604    L305    L206    L506    L404    L103    L605    L207 
+   L503    L203    L101    L303    L603    L204    L504    L102    L403    L304 
+   L601    L501    L301    L201    L401    L502    L202    L302    L602    L402 
+
+0:13  Customer 7 just arrived at seller L4
+0:36  Service start time: Customer 7
+0:43  L4 - Success! Your seat is 40
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   H101    H102    H103    H104    H105    H106    H107    H108    H109       - 
+      -       -       -       -       -       -       -       -       -       - 
+      -       -       -       -       -       -       -       -       -       - 
+   L104    M208    L509    L208    M309    M110    L308    M209    L105    L406 
+   L306    M308    M206    M108    M207    L405    L508    L606    L307    M109 
+   M101    M201    M102    M301    M302    M103    M303    M104    M304    M105 
+   M305    M202    M306    M203    M307    M106    M204    M107    M205    L507 
+   L205    L505    L604    L305    L206    L506    L404    L103    L605    L207 
+   L503    L203    L101    L303    L603    L204    L504    L102    L403    L304 
+   L601    L501    L301    L201    L401    L502    L202    L302    L602    L402 
+
+0:21  Customer 9 just arrived at seller L6
+0:36  Service start time: Customer 9
+0:42  L6 - Success! Your seat is 21
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   H101    H102    H103    H104    H105    H106    H107    H108    H109       - 
+      -       -       -       -       -       -       -       -       -       - 
+   L607       -       -       -       -       -       -       -       -       - 
+   L104    M208    L509    L208    M309    M110    L308    M209    L105    L406 
+   L306    M308    M206    M108    M207    L405    L508    L606    L307    M109 
+   M101    M201    M102    M301    M302    M103    M303    M104    M304    M105 
+   M305    M202    M306    M203    M307    M106    M204    M107    M205    L507 
+   L205    L505    L604    L305    L206    L506    L404    L103    L605    L207 
+   L503    L203    L101    L303    L603    L204    L504    L102    L403    L304 
+   L601    L501    L301    L201    L401    L502    L202    L302    L602    L402 
+
+0:37  Customer 3 just arrived at seller M3
+0:37  Service start time: Customer 3
+0:39  M3 - Success! Your seat is 22
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   H101    H102    H103    H104    H105    H106    H107    H108    H109       - 
+      -       -       -       -       -       -       -       -       -       - 
+   L607    M310       -       -       -       -       -       -       -       - 
+   L104    M208    L509    L208    M309    M110    L308    M209    L105    L406 
+   L306    M308    M206    M108    M207    L405    L508    L606    L307    M109 
+   M101    M201    M102    M301    M302    M103    M303    M104    M304    M105 
+   M305    M202    M306    M203    M307    M106    M204    M107    M205    L507 
+   L205    L505    L604    L305    L206    L506    L404    L103    L605    L207 
+   L503    L203    L101    L303    L603    L204    L504    L102    L403    L304 
+   L601    L501    L301    L201    L401    L502    L202    L302    L602    L402 
+
+0:33  Customer 1 just arrived at seller M1
+0:37  Service start time: Customer 1
+0:40  M1 - Success! Your seat is 23
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   H101    H102    H103    H104    H105    H106    H107    H108    H109       - 
+      -       -       -       -       -       -       -       -       -       - 
+   L607    M310    M111       -       -       -       -       -       -       - 
+   L104    M208    L509    L208    M309    M110    L308    M209    L105    L406 
+   L306    M308    M206    M108    M207    L405    L508    L606    L307    M109 
+   M101    M201    M102    M301    M302    M103    M303    M104    M304    M105 
+   M305    M202    M306    M203    M307    M106    M204    M107    M205    L507 
+   L205    L505    L604    L305    L206    L506    L404    L103    L605    L207 
+   L503    L203    L101    L303    L603    L204    L504    L102    L403    L304 
+   L601    L501    L301    L201    L401    L502    L202    L302    L602    L402 
+
+0:32  Customer 8 just arrived at seller L5
+0:37  Service start time: Customer 8
+0:41  L5 - Success! Your seat is 24
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   H101    H102    H103    H104    H105    H106    H107    H108    H109       - 
+      -       -       -       -       -       -       -       -       -       - 
+   L607    M310    M111    L510       -       -       -       -       -       - 
+   L104    M208    L509    L208    M309    M110    L308    M209    L105    L406 
+   L306    M308    M206    M108    M207    L405    L508    L606    L307    M109 
+   M101    M201    M102    M301    M302    M103    M303    M104    M304    M105 
+   M305    M202    M306    M203    M307    M106    M204    M107    M205    L507 
+   L205    L505    L604    L305    L206    L506    L404    L103    L605    L207 
+   L503    L203    L101    L303    L603    L204    L504    L102    L403    L304 
+   L601    L501    L301    L201    L401    L502    L202    L302    L602    L402 
+
+0:38  Customer 0 just arrived at seller H1
+0:38  Service start time: Customer 0
+0:39  H1 - Success! Your seat is 10
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   H101    H102    H103    H104    H105    H106    H107    H108    H109    H110 
+      -       -       -       -       -       -       -       -       -       - 
+   L607    M310    M111    L510       -       -       -       -       -       - 
+   L104    M208    L509    L208    M309    M110    L308    M209    L105    L406 
+   L306    M308    M206    M108    M207    L405    L508    L606    L307    M109 
+   M101    M201    M102    M301    M302    M103    M303    M104    M304    M105 
+   M305    M202    M306    M203    M307    M106    M204    M107    M205    L507 
+   L205    L505    L604    L305    L206    L506    L404    L103    L605    L207 
+   L503    L203    L101    L303    L603    L204    L504    L102    L403    L304 
+   L601    L501    L301    L201    L401    L502    L202    L302    L602    L402 
+
+0:37  Customer 5 just arrived at seller L2
+0:38  Service start time: Customer 5
+0:42  L2 - Success! Your seat is 25
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   H101    H102    H103    H104    H105    H106    H107    H108    H109    H110 
+      -       -       -       -       -       -       -       -       -       - 
+   L607    M310    M111    L510    L209       -       -       -       -       - 
+   L104    M208    L509    L208    M309    M110    L308    M209    L105    L406 
+   L306    M308    M206    M108    M207    L405    L508    L606    L307    M109 
+   M101    M201    M102    M301    M302    M103    M303    M104    M304    M105 
+   M305    M202    M306    M203    M307    M106    M204    M107    M205    L507 
+   L205    L505    L604    L305    L206    L506    L404    L103    L605    L207 
+   L503    L203    L101    L303    L603    L204    L504    L102    L403    L304 
+   L601    L501    L301    L201    L401    L502    L202    L302    L602    L402 
+
+0:39  Customer 2 just arrived at seller M2
+0:39  Service start time: Customer 2
+0:41  M2 - Success! Your seat is 26
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   H101    H102    H103    H104    H105    H106    H107    H108    H109    H110 
+      -       -       -       -       -       -       -       -       -       - 
+   L607    M310    M111    L510    L209    M210       -       -       -       - 
+   L104    M208    L509    L208    M309    M110    L308    M209    L105    L406 
+   L306    M308    M206    M108    M207    L405    L508    L606    L307    M109 
+   M101    M201    M102    M301    M302    M103    M303    M104    M304    M105 
+   M305    M202    M306    M203    M307    M106    M204    M107    M205    L507 
+   L205    L505    L604    L305    L206    L506    L404    L103    L605    L207 
+   L503    L203    L101    L303    L603    L204    L504    L102    L403    L304 
+   L601    L501    L301    L201    L401    L502    L202    L302    L602    L402 
+
+0:35  Customer 4 just arrived at seller L1
+0:40  Service start time: Customer 4
+0:44  L1 - Success! Your seat is 27
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   H101    H102    H103    H104    H105    H106    H107    H108    H109    H110 
+      -       -       -       -       -       -       -       -       -       - 
+   L607    M310    M111    L510    L209    M210    L106       -       -       - 
+   L104    M208    L509    L208    M309    M110    L308    M209    L105    L406 
+   L306    M308    M206    M108    M207    L405    L508    L606    L307    M109 
+   M101    M201    M102    M301    M302    M103    M303    M104    M304    M105 
+   M305    M202    M306    M203    M307    M106    M204    M107    M205    L507 
+   L205    L505    L604    L305    L206    L506    L404    L103    L605    L207 
+   L503    L203    L101    L303    L603    L204    L504    L102    L403    L304 
+   L601    L501    L301    L201    L401    L502    L202    L302    L602    L402 
+
+0:40  Customer 1 just arrived at seller M1
+0:40  Service start time: Customer 1
+0:43  M1 - Success! Your seat is 28
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   H101    H102    H103    H104    H105    H106    H107    H108    H109    H110 
+      -       -       -       -       -       -       -       -       -       - 
+   L607    M310    M111    L510    L209    M210    L106    M112       -       - 
+   L104    M208    L509    L208    M309    M110    L308    M209    L105    L406 
+   L306    M308    M206    M108    M207    L405    L508    L606    L307    M109 
+   M101    M201    M102    M301    M302    M103    M303    M104    M304    M105 
+   M305    M202    M306    M203    M307    M106    M204    M107    M205    L507 
+   L205    L505    L604    L305    L206    L506    L404    L103    L605    L207 
+   L503    L203    L101    L303    L603    L204    L504    L102    L403    L304 
+   L601    L501    L301    L201    L401    L502    L202    L302    L602    L402 
+
+0:29  Customer 6 just arrived at seller L3
+0:40  Service start time: Customer 6
+0:45  L3 - Success! Your seat is 29
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   H101    H102    H103    H104    H105    H106    H107    H108    H109    H110 
+      -       -       -       -       -       -       -       -       -       - 
+   L607    M310    M111    L510    L209    M210    L106    M112    L309       - 
+   L104    M208    L509    L208    M309    M110    L308    M209    L105    L406 
+   L306    M308    M206    M108    M207    L405    L508    L606    L307    M109 
+   M101    M201    M102    M301    M302    M103    M303    M104    M304    M105 
+   M305    M202    M306    M203    M307    M106    M204    M107    M205    L507 
+   L205    L505    L604    L305    L206    L506    L404    L103    L605    L207 
+   L503    L203    L101    L303    L603    L204    L504    L102    L403    L304 
+   L601    L501    L301    L201    L401    L502    L202    L302    L602    L402 
+
+0:34  Customer 8 just arrived at seller L5
+0:41  Service start time: Customer 8
+0:45  L5 - Success! Your seat is 30
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   H101    H102    H103    H104    H105    H106    H107    H108    H109    H110 
+      -       -       -       -       -       -       -       -       -       - 
+   L607    M310    M111    L510    L209    M210    L106    M112    L309    L511 
+   L104    M208    L509    L208    M309    M110    L308    M209    L105    L406 
+   L306    M308    M206    M108    M207    L405    L508    L606    L307    M109 
+   M101    M201    M102    M301    M302    M103    M303    M104    M304    M105 
+   M305    M202    M306    M203    M307    M106    M204    M107    M205    L507 
+   L205    L505    L604    L305    L206    L506    L404    L103    L605    L207 
+   L503    L203    L101    L303    L603    L204    L504    L102    L403    L304 
+   L601    L501    L301    L201    L401    L502    L202    L302    L602    L402 
+
+0:38  Customer 5 just arrived at seller L2
+0:42  Service start time: Customer 5
+0:46  L2 - Success! Your seat is 11
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   H101    H102    H103    H104    H105    H106    H107    H108    H109    H110 
+   L210       -       -       -       -       -       -       -       -       - 
+   L607    M310    M111    L510    L209    M210    L106    M112    L309    L511 
+   L104    M208    L509    L208    M309    M110    L308    M209    L105    L406 
+   L306    M308    M206    M108    M207    L405    L508    L606    L307    M109 
+   M101    M201    M102    M301    M302    M103    M303    M104    M304    M105 
+   M305    M202    M306    M203    M307    M106    M204    M107    M205    L507 
+   L205    L505    L604    L305    L206    L506    L404    L103    L605    L207 
+   L503    L203    L101    L303    L603    L204    L504    L102    L403    L304 
+   L601    L501    L301    L201    L401    L502    L202    L302    L602    L402 
+
+0:22  Customer 9 just arrived at seller L6
+0:42  Service start time: Customer 9
+0:48  L6 - Success! Your seat is 12
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   H101    H102    H103    H104    H105    H106    H107    H108    H109    H110 
+   L210    L608       -       -       -       -       -       -       -       - 
+   L607    M310    M111    L510    L209    M210    L106    M112    L309    L511 
+   L104    M208    L509    L208    M309    M110    L308    M209    L105    L406 
+   L306    M308    M206    M108    M207    L405    L508    L606    L307    M109 
+   M101    M201    M102    M301    M302    M103    M303    M104    M304    M105 
+   M305    M202    M306    M203    M307    M106    M204    M107    M205    L507 
+   L205    L505    L604    L305    L206    L506    L404    L103    L605    L207 
+   L503    L203    L101    L303    L603    L204    L504    L102    L403    L304 
+   L601    L501    L301    L201    L401    L502    L202    L302    L602    L402 
+
+0:43  Customer 0 just arrived at seller H1
+0:43  Service start time: Customer 0
+0:44  H1 - Success! Your seat is 13
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   H101    H102    H103    H104    H105    H106    H107    H108    H109    H110 
+   L210    L608    H111       -       -       -       -       -       -       - 
+   L607    M310    M111    L510    L209    M210    L106    M112    L309    L511 
+   L104    M208    L509    L208    M309    M110    L308    M209    L105    L406 
+   L306    M308    M206    M108    M207    L405    L508    L606    L307    M109 
+   M101    M201    M102    M301    M302    M103    M303    M104    M304    M105 
+   M305    M202    M306    M203    M307    M106    M204    M107    M205    L507 
+   L205    L505    L604    L305    L206    L506    L404    L103    L605    L207 
+   L503    L203    L101    L303    L603    L204    L504    L102    L403    L304 
+   L601    L501    L301    L201    L401    L502    L202    L302    L602    L402 
+
+0:41  Customer 1 just arrived at seller M1
+0:43  Service start time: Customer 1
+0:46  M1 - Success! Your seat is 14
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   H101    H102    H103    H104    H105    H106    H107    H108    H109    H110 
+   L210    L608    H111    M113       -       -       -       -       -       - 
+   L607    M310    M111    L510    L209    M210    L106    M112    L309    L511 
+   L104    M208    L509    L208    M309    M110    L308    M209    L105    L406 
+   L306    M308    M206    M108    M207    L405    L508    L606    L307    M109 
+   M101    M201    M102    M301    M302    M103    M303    M104    M304    M105 
+   M305    M202    M306    M203    M307    M106    M204    M107    M205    L507 
+   L205    L505    L604    L305    L206    L506    L404    L103    L605    L207 
+   L503    L203    L101    L303    L603    L204    L504    L102    L403    L304 
+   L601    L501    L301    L201    L401    L502    L202    L302    L602    L402 
+
+0:14  Customer 7 just arrived at seller L4
+0:43  Service start time: Customer 7
+0:50  L4 - Success! Your seat is 15
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   H101    H102    H103    H104    H105    H106    H107    H108    H109    H110 
+   L210    L608    H111    M113    L407       -       -       -       -       - 
+   L607    M310    M111    L510    L209    M210    L106    M112    L309    L511 
+   L104    M208    L509    L208    M309    M110    L308    M209    L105    L406 
+   L306    M308    M206    M108    M207    L405    L508    L606    L307    M109 
+   M101    M201    M102    M301    M302    M103    M303    M104    M304    M105 
+   M305    M202    M306    M203    M307    M106    M204    M107    M205    L507 
+   L205    L505    L604    L305    L206    L506    L404    L103    L605    L207 
+   L503    L203    L101    L303    L603    L204    L504    L102    L403    L304 
+   L601    L501    L301    L201    L401    L502    L202    L302    L602    L402 
+
+0:44  Customer 0 just arrived at seller H1
+0:44  Service start time: Customer 0
+0:45  H1 - Success! Your seat is 16
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   H101    H102    H103    H104    H105    H106    H107    H108    H109    H110 
+   L210    L608    H111    M113    L407    H112       -       -       -       - 
+   L607    M310    M111    L510    L209    M210    L106    M112    L309    L511 
+   L104    M208    L509    L208    M309    M110    L308    M209    L105    L406 
+   L306    M308    M206    M108    M207    L405    L508    L606    L307    M109 
+   M101    M201    M102    M301    M302    M103    M303    M104    M304    M105 
+   M305    M202    M306    M203    M307    M106    M204    M107    M205    L507 
+   L205    L505    L604    L305    L206    L506    L404    L103    L605    L207 
+   L503    L203    L101    L303    L603    L204    L504    L102    L403    L304 
+   L601    L501    L301    L201    L401    L502    L202    L302    L602    L402 
+
+0:42  Customer 4 just arrived at seller L1
+0:44  Service start time: Customer 4
+0:48  L1 - Success! Your seat is 17
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   H101    H102    H103    H104    H105    H106    H107    H108    H109    H110 
+   L210    L608    H111    M113    L407    H112    L107       -       -       - 
+   L607    M310    M111    L510    L209    M210    L106    M112    L309    L511 
+   L104    M208    L509    L208    M309    M110    L308    M209    L105    L406 
+   L306    M308    M206    M108    M207    L405    L508    L606    L307    M109 
+   M101    M201    M102    M301    M302    M103    M303    M104    M304    M105 
+   M305    M202    M306    M203    M307    M106    M204    M107    M205    L507 
+   L205    L505    L604    L305    L206    L506    L404    L103    L605    L207 
+   L503    L203    L101    L303    L603    L204    L504    L102    L403    L304 
+   L601    L501    L301    L201    L401    L502    L202    L302    L602    L402 
+
+0:45  Customer 0 just arrived at seller H1
+0:45  Service start time: Customer 0
+0:46  H1 - Success! Your seat is 18
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   H101    H102    H103    H104    H105    H106    H107    H108    H109    H110 
+   L210    L608    H111    M113    L407    H112    L107    H113       -       - 
+   L607    M310    M111    L510    L209    M210    L106    M112    L309    L511 
+   L104    M208    L509    L208    M309    M110    L308    M209    L105    L406 
+   L306    M308    M206    M108    M207    L405    L508    L606    L307    M109 
+   M101    M201    M102    M301    M302    M103    M303    M104    M304    M105 
+   M305    M202    M306    M203    M307    M106    M204    M107    M205    L507 
+   L205    L505    L604    L305    L206    L506    L404    L103    L605    L207 
+   L503    L203    L101    L303    L603    L204    L504    L102    L403    L304 
+   L601    L501    L301    L201    L401    L502    L202    L302    L602    L402 
+
+0:35  Customer 8 just arrived at seller L5
+0:45  Service start time: Customer 8
+0:49  L5 - Success! Your seat is 19
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   H101    H102    H103    H104    H105    H106    H107    H108    H109    H110 
+   L210    L608    H111    M113    L407    H112    L107    H113    L512       - 
+   L607    M310    M111    L510    L209    M210    L106    M112    L309    L511 
+   L104    M208    L509    L208    M309    M110    L308    M209    L105    L406 
+   L306    M308    M206    M108    M207    L405    L508    L606    L307    M109 
+   M101    M201    M102    M301    M302    M103    M303    M104    M304    M105 
+   M305    M202    M306    M203    M307    M106    M204    M107    M205    L507 
+   L205    L505    L604    L305    L206    L506    L404    L103    L605    L207 
+   L503    L203    L101    L303    L603    L204    L504    L102    L403    L304 
+   L601    L501    L301    L201    L401    L502    L202    L302    L602    L402 
+
+0:45  Customer 6 just arrived at seller L3
+0:45  Service start time: Customer 6
+0:50  L3 - Success! Your seat is 20
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   H101    H102    H103    H104    H105    H106    H107    H108    H109    H110 
+   L210    L608    H111    M113    L407    H112    L107    H113    L512    L310 
+   L607    M310    M111    L510    L209    M210    L106    M112    L309    L511 
+   L104    M208    L509    L208    M309    M110    L308    M209    L105    L406 
+   L306    M308    M206    M108    M207    L405    L508    L606    L307    M109 
+   M101    M201    M102    M301    M302    M103    M303    M104    M304    M105 
+   M305    M202    M306    M203    M307    M106    M204    M107    M205    L507 
+   L205    L505    L604    L305    L206    L506    L404    L103    L605    L207 
+   L503    L203    L101    L303    L603    L204    L504    L102    L403    L304 
+   L601    L501    L301    L201    L401    L502    L202    L302    L602    L402 
+
+Total H customers successfully served: 13
+Total M customers successfully served: 33
+Total L customers successfully served: 54
+Total number of customers that were served: 150
+Total number of customers that weren't served: 50
