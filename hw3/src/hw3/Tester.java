@@ -71,6 +71,11 @@ public class Tester
 		System.out.println("Total H customers successfully served: " + Tester.successH);
 		System.out.println("Total M customers successfully served: " + Tester.successM);
 		System.out.println("Total L customers successfully served: " + Tester.successL);
+		
+		int totalTicketsSold = numOfCustomers*10;
+		
+		System.out.println("Total number of customers that were served: " + totalTicketsSold);
+		System.out.println("Total number of customers that weren't served: " + (totalTicketsSold - Tester.successH - Tester.successM - Tester.successL));
     }
 
 
