@@ -4,61 +4,72 @@ public class SellerL extends Seller
 {
 
     private Object lock;
-    public SellerL(Seat[][] seat, String sellerID, Object lock)
+    public SellerL(Seat[][] aSeat, String aSellerID, Object aLock)
     {
-        super(seat, randomVar.nextInt(4) + 4, sellerID, lock, System.currentTimeMillis());
-        this.lock = lock;
+        super(aSeat, randomVar.nextInt(4) + 4, aSellerID, aLock, System.currentTimeMillis());
+        this.lock = aLock;
 
     }
 
-    public void sell() {
+    public void sell() 
+    {
         while (!customerQueue.isEmpty())
         {
-            Customer customer;
-            if (customerQueue.isEmpty()) return;
-            // Get customer in queue that is ready
+        		//will get the customer in queue that is ready 
+            Customer aCustomer;
+            if (customerQueue.isEmpty())
+            {
+            	return;
+            }
+            
+            //will get the current time
             update();
-            if(currentTime <= 59)
-                customer = customerQueue.peek();
+            if(currentTime < 60)
+            {
+                aCustomer = customerQueue.peek();
+            }
             else
+            {
                 return;
+            }
 
-            // Find seat for the customer
-            // Case for Seller L
-            Seat seat = null;
-
-            //System.out.println(currentTime);
+            // looks at seat for the customer this cse of Seller L
+            Seat aSeat = null;
 
             synchronized(lock)
             {
                 update();
                 //System.out.println("got in");
-                if(currentTime  >= (customer.getArrivalTime())){
-                    find_seat:
-                    for (int i = seating.length-1; i >= 0; i--) {
-                        for (int j = 0; j < seating[0].length; j++) {
-                            if (seating[i][j].isSeatEmpty()) {
-                                // Assign seat to customer
-                                // Seat number = (Row x 10) + (Col + 1)
-                                int seatNum = (i * 10) + j + 1;
-                                seat = new Seat(seatNum);
-                                super.assignSeat(customer, seat, i, j);
-                                //update();
-                                printMsg(customer, seat);
+                if(currentTime  >= (aCustomer.getArrivalTime()))
+                {
+                    assignSeat:
+                    for (int i = seating.length-1; i >= 0; i--) 
+                    {
+                        for (int j = 0; j < seating[0].length; j++)
+                        {
+                            if (seating[i][j].isSeatEmpty())
+                            {
+              
+                                int seatNumber = (i * 10) + j + 1;
+                                aSeat = new Seat(seatNumber);
+                                super.assignSeat(aCustomer, aSeat, i, j);
+                                printMsg(aCustomer, aSeat);
                                 customerQueue.remove();
-                                break find_seat;
+                                break assignSeat;
                             }
                         }
                     }
                 }
             }
-            if(seat != null){
-                try {
+            if(aSeat != null)
+            {
+                try 
+                {
                     Thread.sleep(serviceTime * 1000);
                     update();
-                } catch (InterruptedException e)
+                } catch (InterruptedException a)
                 {
-                    e.printStackTrace();
+                    a.printStackTrace();
                 }
             }
 
