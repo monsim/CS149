@@ -1,85 +1,90 @@
 package hw3;
 
-public class SellerM extends Seller{
+public class SellerM extends Seller
+{
     private Object lock;
 
-    public SellerM(Seat[][] seat, String sellerID, Object lock)
+    public SellerM(Seat[][] aSeat, String aSellerId, Object aLock)
     {
-        super(seat, randomVar.nextInt(3) + 2, sellerID, lock, System.currentTimeMillis());
-        this.lock = lock;
+        super(aSeat, randomVar.nextInt(3) + 2, aSellerId, aLock, System.currentTimeMillis());
+        this.lock = aLock;
     }
 
     public void sell()
     {
         while (!customerQueue.isEmpty())
         {
-            //Object lock = new Object();
-            Customer customer;
+           
+        		//will get the customer in queue that is ready 
+            Customer aCustomer;
             if (customerQueue.isEmpty())
+            {
                 return;
-            // Get customer in queue that is ready
+            }
 
-
-            update(); // get the current time
-            if(currentTime <= 59)
-                customer = customerQueue.peek();
+            //will get the current time
+            update(); 
+            if(currentTime < 60)
+            {
+            	  aCustomer = customerQueue.peek();
+            }
+              
             else
-                return;
+            {
+            	 	return;
+            }
+               
 
-            // Find seat for the customer
-            // Case for Seller M
-            boolean flag = true;
-            int counter = 1;
+            // looks at seat for the customer this case of Seller M 
+            boolean checker = true;
+            int count = 1;
 
-            Seat seat = null;
+            Seat aSeat = null;
 
-            //System.out.println(currentTime);
 
             synchronized(lock)
             {
                 update();
-                //System.out.println("got in");
-                if(currentTime  >= (customer.getArrivalTime()))
+                if(currentTime  >= (aCustomer.getArrivalTime()))
                 {
-                    find_seat:
+                    assignSeat:
                     for(int i = 5; i >= 0 && i < seating.length;)
                     {
                         for (int j = 0; j < seating[0].length; j++)
                         {
                             if (seating[i][j].isSeatEmpty())
                             {
-                                // Assign seat to customer
-                                // Seat number = (Row x 10) + (Col + 1)
-                                int seatNum = (i*10)+j+1;
-                                seat = new Seat(seatNum);
-                                super.assignSeat(customer, seat, i, j);
-                                //update();
-                                printMsg(customer, seat);
+                                int seatNumber = (i*10)+j+1;
+                                aSeat = new Seat(seatNumber);
+                                super.assignSeat(aCustomer, aSeat, i, j);
+                                printMsg(aCustomer, aSeat);
                                 customerQueue.remove();
-                                break find_seat;
+                                break assignSeat;
                             }
                         }
-                        if(flag == true)
+                        if(checker == true)
                         {
-                            i += counter;
-                            flag = false;
+                            i = i + count;
+                            checker = false;
                         }
                         else
-                            {
-                            i -= counter;
-                            flag = true;
+                        {
+                            i = i - count;
+                            checker = true;
                         }
-                        counter++;
+                        count++;
                     }
                 }
             }
-            if(seat != null){
-                try {
+            if(aSeat != null)
+            {
+                try
+                {
                     Thread.sleep(serviceTime * 1000);
                     update();
-                } catch (InterruptedException e)
+                } catch (InterruptedException a)
                 {
-                    e.printStackTrace();
+                    a.printStackTrace();
                 }
             }
 
