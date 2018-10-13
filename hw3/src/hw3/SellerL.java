@@ -39,7 +39,6 @@ public class SellerL extends Seller
             synchronized(lock)
             {
                 update();
-                //System.out.println("got in");
                 if(currentTime  >= (aCustomer.getArrivalTime()))
                 {
                     assignSeat:

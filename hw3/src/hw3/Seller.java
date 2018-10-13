@@ -113,7 +113,7 @@ public abstract class Seller implements Runnable {
 		if (seat == null)
 			System.out.println(getSuccessTime(customer) + "  " + this.sellerID + " - Sorry, the concert is sold out!");
 		else
-			System.out.println(getSuccessTime(customer) + "  " + this.sellerID + " - Success! Your seat is " + seat.getSeatNumber());
+			System.out.println(getSuccessTime(customer) + "  " + this.sellerID + " Successfully seated at seat " + seat.getSeatNumber());
 
 		printSeating(this.seating, 10, 10);
 		
@@ -181,7 +181,7 @@ public abstract class Seller implements Runnable {
 	 * @param maxCols
 	 */
 	public static void printSeating(Seat[][] seating, int maxRows, int maxCols) {
-		System.out.println("-------------------------");
+		
 		for (int row = 0; row < maxRows; row++) {
 			for (int col = 0; col < maxCols; col++) {
 				if (seating[row][col].isSeatEmpty())
@@ -191,6 +191,7 @@ public abstract class Seller implements Runnable {
 			}
 			System.out.println();
 		}
+		System.out.println("-------------------------");
 	}
 	
 	
