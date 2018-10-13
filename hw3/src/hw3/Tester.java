@@ -100,9 +100,10 @@ public class Tester
 		System.out.println("Total L customers successfully served: " + Tester.successL);
 		
 		int totalTicketsSold = numberOfCustomers*10;
-		if (numberOfCustomers >= 10) totalTicketsSold = 100;
+		if (numberOfCustomers > 10) totalTicketsSold = 100;
 		
-		System.out.println("Total number of customers that were served: " + totalTicketsSold);
+		if (numberOfCustomers <= 10) System.out.println("Total number of customers that were served: " + (Tester.successH + Tester.successM + Tester.successL));
+		else System.out.println("Total number of customers that were served: " + totalTicketsSold);
 		System.out.println("Total number of customers that weren't served: " + (numberOfCustomers*10 - Tester.successH - Tester.successM - Tester.successL));
     }
     
