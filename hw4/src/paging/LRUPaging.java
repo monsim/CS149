@@ -6,8 +6,8 @@ import java.util.LinkedList;
 
 public class LRUPaging extends Memory
 {
-
-    private final LinkedList<Page> LRUCache = new LinkedList<>();
+	//queue
+    private final LinkedList<Page> LRUCache = new LinkedList<>(); 
 
 
     // method gives disk access to memory, variable 'disk'

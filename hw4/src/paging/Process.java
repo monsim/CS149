@@ -16,11 +16,16 @@ public class Process {
     private final Random r = new Random();
     private int pageRefs;
     private final List<Integer> stats = new ArrayList<>();
-
+    private int name;
    
     //Constructor to create process and set mem
-    public Process(Memory accessTo) {
-        mem = accessTo;
+    public Process(Memory accessTo, int name) {
+        this.mem = accessTo;
+        this.name = name;
+    }
+    
+    public int getName() {
+    		return this.name;
     }
 
     //Generates the page that process will reference

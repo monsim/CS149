@@ -1,18 +1,25 @@
 package paging;
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Optional;
+import java.util.Queue;
+import java.util.Random;
 
 
 public abstract class Memory {
 
     private final Disk disk;
     private final int maxPages = 4;
+    //pages in memory
     private final List<Page> pageFrames = new ArrayList<>();
     private int pageHits;
+    private int time = 0;
+    private Queue<Page> workload;
 
     //Assigns disk access to memory
     public Memory(Disk d) {
+    		workload = new LinkedList<>();
         disk = d;
     }
 
@@ -22,12 +29,25 @@ public abstract class Memory {
   
     public Page requestPage(int page, int referencesMade) {
         Optional<Page> optPage = pageFrames.stream().filter(p -> p.getPageNumber() == page).findFirst();
-        System.out.print("Ref " + referencesMade + ": ");
+        System.out.print("Page reference " + referencesMade + " pages in memory: ");
+        
         pageFrames.stream().forEach(System.out::print);
         System.out.println();
         if (optPage.isPresent()) {
-            System.out.println("Page " + page + " is hit");
-            pageHits++;
+        		Random gen = new Random();
+        		int duration = gen.nextInt(5) + 1;
+        		String arrivalTime = (duration + time) + "";
+        		if (arrivalTime.length() <= 2) {
+        			arrivalTime = "." + arrivalTime;
+        		} else {
+        			String lhs = arrivalTime.substring(0, arrivalTime.length() - 2);
+        			String rhs = arrivalTime.substring(arrivalTime.length() - 2, arrivalTime.length());
+        			arrivalTime = lhs + "." + rhs;
+        		}
+        		System.out.println("Arrival time: " + arrivalTime + " seconds");
+        		time += duration;
+        		System.out.println("Page " + page + " is hit");
+        		pageHits++;
             return optPage.get();
         }
         
