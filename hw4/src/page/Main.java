@@ -1,4 +1,4 @@
-package paging;
+package page;
 
 import java.io.FileNotFoundException;
 import java.io.PrintStream;
@@ -8,10 +8,10 @@ public class Main {
     public static void main(String[] args) {
     		
     		try { 
-    			PrintStream streamToFile = new PrintStream("PagingOutput.txt");
-    			System.setOut(streamToFile);
+    			PrintStream file = new PrintStream("PagingOutput.txt");
+    			System.setOut(file);
     			
-	        String output = ""; 
+	        String text = ""; 
 	        
 	        Disk disk = new Disk();
 	        Memory[] algorithms = {new FIFOPaging(disk), new LRUPaging(disk), new LFUPaging(disk), new MFUPaging(disk), new RandomPaging(disk)};
@@ -22,15 +22,15 @@ public class Main {
 	            
 	            System.out.println(algorithmNames[i]);
 	            System.out.println("Process " + process.getName() + " is running.");
-	            for (int j = 0; j < 5; j++) {
-	                System.out.println("\r\nRun " + (j + 1) + " ");
+	            for (int j = 1; j <= 5; j++) {
+	                System.out.println("\r\nRun number " + (j) + " ");
 	                process.run();
 	                process.reset();
 	            }
-	            output += algorithmNames[i] + (" ") + process.printAverageHitRatio(); 
+	            text += algorithmNames[i] + (" ") + process.getAverageHitRatio(); 
 	            System.out.println();
 	        }
-	        System.out.println(output);
+	        System.out.println(text);
 	    } catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

@@ -1,25 +1,22 @@
-package swapping;
-import java.util.ArrayList;
-import java.util.Random;
+package swap;
+import java.util.*;
 
 public abstract class Memory {
     private final ArrayList<String> memory = new ArrayList<>();
     private int time = 0;
 
-    //Initialize memory with 100 free spaces
     public Memory() {
         for (int i = 0; i < 100; i++) {
             memory.add(".");
         }
     }
 
-    //get the starting index of where to allocate memory for the provided process.
     public abstract int getNextIndex(ArrayList<String> memory, SimulatedProcess proccess);
 
     public boolean allocateMemory(SimulatedProcess process) {
-        int startingIndex = getNextIndex(memory, process);
-        if (startingIndex != -1) {
-            for (int i = startingIndex; i < startingIndex + process.getSize(); i++) {
+        int index = getNextIndex(memory, process);
+        if (index != -1) {
+            for (int i = index; i < index + process.getSize(); i++) {
                 memory.set(i, process.getName());
             }
             Random gen = new Random();
@@ -34,7 +31,7 @@ public abstract class Memory {
 	    		}
 	    		System.out.println("Arrival time: " + arrivalTime + " seconds");
 	    		time += duration;
-            System.out.print("Entered memory map " + process.getName() + ": ");
+            System.out.print("Entered memory map for process " + process.getName() + ": ");
             printMemoryMap();
             return true;
         }
@@ -48,7 +45,7 @@ public abstract class Memory {
                 memory.set(i, ".");
             }
         }
-        System.out.print("Exited memory map " + process.getName() + ": ");
+        System.out.print("Exited memory map for process " + process.getName() + ": ");
         printMemoryMap();
     }
 
